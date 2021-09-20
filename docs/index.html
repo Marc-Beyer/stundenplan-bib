@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Script Attacher</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style/main.css'>
+</head>
+<body>
+    <h1>Script Attacher</h1>
+    <p>
+        Do you want to attach Java scripts or CSS to a website?
+        <br>
+        <br>
+        With "Script Attacher" you can do this easily and permanently.
+        <br>
+        This add-on just takes your scripts and attaches them to the websites you can select with regular expressions.
+    </p>
+    
+    <h2>Files</h2>
+    <p>
+        There are 4 types of files you can add:
+        <ul>
+            <li>JS</li>
+            <li>CSS</li>
+            <li>Script-link</li>
+            <li>Other</li>
+        </ul>
+    </p>
+    <h3>JS</h3>
+    <p>
+        This is a JavaScropt file.
+        <br>
+        It will be inlined in a script-tag
+    </p>
+    <h3>CSS</h3>
+    <p>
+        This is a CSS file.
+        <br>
+        It will be inlined in a style-tag
+    </p>
+    <h3>Script-link</h3>
+    <p>
+        This is a link to an external script.
+        <br>
+        It will be added as src in a script-tag
+    </p>
+    <h3>Other</h3>
+    <p>
+        This is JSON file.
+        <br>
+        It shoud have the keys "tagName" and "text".
+        <br>
+        "tagName" is the tagname of the added node (for example "link", "script" or "style").
+        <br>
+        "text" is the text appended as textnode.
+        <br>
+        All other keys will be added as attributes to the node (for example "src", "type", "href" or "rel").
+    </p>
+
+    <h2>Example Scripts</h2>
+    <p>
+        <ul>
+            <li>
+                <a href="./example scripts/netflixVolume.js">./example scripts/netflixVolume.js</a>
+            </li>
+            <li>
+                <a href="./example scripts/channelBlockerEnhancer.js">./example scripts/channelBlockerEnhancer.js</a>
+            </li>
+        </ul>
+    </p>
+</body>
+</html>

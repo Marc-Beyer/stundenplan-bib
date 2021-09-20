@@ -1,0 +1,30 @@
+$primary-background-color: #1b1b1b;
+$secondary-background-color: #333333;
+$third-background-color: #424242;
+
+$primary-text-color: #d6d6d6;
+$secondary-text-color: #919191;
+
+body{
+    background: $primary-background-color;
+    color: $primary-text-color;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    width: calc(100% - 2rem);
+    margin: 1rem;
+
+    a{
+        color: $secondary-text-color;
+    }
+
+    p{
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+
+    h3{
+        margin-left: 0.5rem;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,55 @@
+{
+	"manifest_version": 2,
+	"name": "BIB Stundenplan",
+	"version": "0.0.1",
+
+	"description": "...",
+	
+	"icons": {
+		"16": "/images/icon_16.png",
+		"32": "/images/icon_32.png",
+		"48": "/images/icon_48.png",
+		"96": "/images/icon_96.png"
+	},
+	
+	"permissions": [
+		"storage",
+		"unlimitedStorage",
+		"tabs"
+	],
+
+	"browser_action": {
+		"default_title": "Stundenplan",
+		"default_icon": {
+			"16": "/images/icon_16.png",
+			"32": "/images/icon_32.png",
+			"48": "/images/icon_48.png",
+			"96": "/images/icon_96.png"
+		}
+	},
+
+	"options_ui": {
+		"page": "ui/options.html",
+		"open_in_tab": true
+	},
+
+	"background": {
+		"scripts": [
+			"browser-polyfill.min.js",
+			"shared/container.js",
+			"background/storage.js",
+			"background/browserAction.js"
+
+		]
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://intranet.bib.de/tiki-index.php?page=Wochenplan"],
+			"js": [
+				"browser-polyfill.min.js",
+				"content/controller.js"
+			]
+		}
+	]
+}

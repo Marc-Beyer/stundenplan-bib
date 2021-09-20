@@ -1,0 +1,51 @@
+$main-bg-color: #424242;
+$main-color: #e2e2e2;
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $main-bg-color;
+    color: $main-color;
+
+    padding: 10px;
+
+    h3{
+        margin-top: 20px 0;
+    }
+
+    #color{
+        width: 300px;
+
+        .fach{
+            display: flex;
+
+            lable,
+            input{
+                flex: 1;
+            }
+
+            button{
+                margin: 0 10px 0 0;
+                padding: 0 3px;
+                background: #d80000;
+                font-weight: bold;
+            }
+
+            
+        }
+        .fach:hover{
+            background-color: #505050;
+        }
+    }
+
+    
+
+    #add-panel{
+        margin-top: 20px;
+
+    }
+}
