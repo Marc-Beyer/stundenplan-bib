@@ -1,5 +1,5 @@
 let blockedContainer = document.querySelector("#blocked");
-let colorContainer = document.querySelector("#color");
+let faecherContainer = document.querySelector("#faecher");
 let addBtn = document.querySelector("#add-btn");
 
 addBtn.addEventListener("click", (e) => {
@@ -56,7 +56,7 @@ function handleResponse(data) {
             div.append(bgColorInp);
             div.append(colorInp);
             div.append(checkBox);
-            colorContainer.append(div);
+            faecherContainer.append(div);
         }
     }
 }

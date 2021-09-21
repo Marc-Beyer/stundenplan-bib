@@ -19,26 +19,26 @@ body h3 {
   margin-top: 20px;
 }
 
-body #color {
+body #faecher {
   margin-top: 20px;
   width: 300px;
 }
 
-body #color .fach {
+body #faecher .fach {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
 
-body #color .fach lable,
-body #color .fach input {
+body #faecher .fach lable,
+body #faecher .fach input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-body #color .fach button {
+body #faecher .fach button {
   margin: 0 10px 0 0;
   padding: 0 3px;
   background: none;
@@ -47,11 +47,11 @@ body #color .fach button {
   border: none;
 }
 
-body #color .fach button:hover {
+body #faecher .fach button:hover {
   cursor: pointer;
 }
 
-body #color .fach:hover {
+body #faecher .fach:hover {
   background-color: #505050;
 }
 /*# sourceMappingURL=main.css.map */
