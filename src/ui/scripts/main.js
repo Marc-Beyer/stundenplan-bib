@@ -4,6 +4,20 @@ let addInput = document.querySelector("#add-panel input");
 let standBgColor = document.querySelector("#standart-bg-color");
 let standColor = document.querySelector("#standart-font-color");
 
+function changeStandColor(){
+    browser.runtime.sendMessage({
+        type: "change-values-data",
+        values: {
+            standartBgColor: standBgColor.value,
+            standartColor: standColor.value,
+        }
+    });
+};
+
+standBgColor.addEventListener("change", changeStandColor);
+standColor.addEventListener("change", changeStandColor);
+
+
 addBtn.addEventListener("click", (e) => {
     sendAddDataMessage(addInput.value);
 });

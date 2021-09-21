@@ -1,8 +1,8 @@
 // All data stored
 const initialData = {
     __values: {
-        standartBgColor: "#424242",
-        standartColor: "#dddddd",
+        standartBgColor: "#ffdddd",
+        standartColor: "#000000",
     },
 };
 
@@ -35,6 +35,10 @@ getStorage();
 
 function handleMessage(request, sender, sendResponse) {
     switch (request.type) {
+        case "change-values-data":
+            data.__values = request.values;
+            browser.storage.local.set(data);
+            break;
         case "change-fach-data":
             data[request.fach.name] = {
                 name: request.fach.name,
