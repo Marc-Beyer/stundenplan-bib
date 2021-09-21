@@ -74,14 +74,16 @@ function addFachToDOM(element) {
 }
 
 function handleResponse(data) {
+    console.log("handleResponse(data)", data);
     let oldFaecher = document.querySelectorAll(".fach");
     for (const fach of oldFaecher) {
         fach.remove();
     }
     for (const key in data) {
         if (Object.hasOwnProperty.call(data, key)) {
-            if(key !== "__values"){
-
+            if(key === "__values"){
+                standBgColor.value = data[key].standartBgColor;
+                standColor.value = data[key].standartColor;
             }else{
                 addFachToDOM(data[key]);
             }
