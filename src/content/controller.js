@@ -135,7 +135,6 @@ function getColor(fach){
 
 function getIsBlocked(fach){
     if(data[fach] == undefined){
-        console.log("NOOOOOOOO");
         return false;
     }else{
         return data[fach].isBlocked;
@@ -190,5 +189,24 @@ function sendMessage(msg) {
 for (const fach of faecher) {
     console.log(fach);
 }
+
+function handleMessage(request, sender, sendResponse) {
+
+    switch (request.type) {
+        case "change-fach-data":
+            data[request.fach.name] = {
+                name: request.fach.name,
+                color: request.fach.color,
+                bgColor: request.fach.bgColor,
+                isBlocked: request.fach.isBlocked
+            } 
+
+            handleResponse(data);
+            
+            break;
+    }
+}
+  
+browser.runtime.onMessage.addListener(handleMessage);
 
 sendMessage(faecher);

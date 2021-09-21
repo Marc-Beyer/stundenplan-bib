@@ -19,6 +19,19 @@ function appendWithTd(tableRow, element){
     tableRow.append(td);
 }
 
+async function removeFach(tableRow){
+    await tableRow.animate([
+        // keyframes
+        { transform: 'translateX(0px)' },
+        { transform: 'translateX(-800px)' }
+    ], {
+        // timing options
+        duration: 250
+    }).finished;
+    
+    tableRow.remove();
+}
+
 function addFachToDOM(element) {
     let tableRow = document.createElement("tr");
     let delBtn = document.createElement("button");
@@ -31,6 +44,7 @@ function addFachToDOM(element) {
     delBtn.append("X");
     delBtn.addEventListener("click", (e) => {
         sendDeleteDataMessage(element.name);
+        removeFach(tableRow);
     });
 
     lable.append(element.name);
