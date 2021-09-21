@@ -1,5 +1,7 @@
 $main-bg-color: #282C34;
 $main-color: #ABB2BF;
+$standart-font-size: 15px;
+$standart-font: Consolas, sans-serif;
 
 *{
     margin: 0%;
@@ -7,22 +9,35 @@ $main-color: #ABB2BF;
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: DIN;
+    src: url(../fonts/din1451altG.ttf) format("truetype");
+}
+
 body{
     background-color: $main-bg-color;
-    color: $main-color;
+    color: $main-color; 
+    font-size: $standart-font-size;
+    font-family: $standart-font;
 
-    padding: 10px;
+    padding: 20px;
+
+    p{
+        position: absolute;
+        top: 200px;
+        left: 700px;
+    }
 
     #add-panel{
         margin-top: 20px;
     }
 
-    h3{
-        margin-top: 20px;
+    h2{
+        margin-top: 40px;
     }
 
     #faecher{
-        margin-top: 20px;
+        margin-top: 10px;
         width: 300px;
 
         border-collapse:separate;
@@ -30,8 +45,12 @@ body{
 
         tr{
 
+            th{
+                padding: 5px;
+            }
+
             td{
-                min-width: 80px;
+                min-width: 100px;
                 text-align: center;
                 vertical-align: middle;
             }

@@ -5,29 +5,46 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: DIN;
+  src: url(../fonts/din1451altG.ttf) format("truetype");
+}
+
 body {
   background-color: #282C34;
   color: #ABB2BF;
-  padding: 10px;
+  font-size: 15px;
+  font-family: Consolas, sans-serif;
+  padding: 20px;
+}
+
+body p {
+  position: absolute;
+  top: 200px;
+  left: 700px;
 }
 
 body #add-panel {
   margin-top: 20px;
 }
 
-body h3 {
-  margin-top: 20px;
+body h2 {
+  margin-top: 40px;
 }
 
 body #faecher {
-  margin-top: 20px;
+  margin-top: 10px;
   width: 300px;
   border-collapse: separate;
   border-spacing: 0 10px;
 }
 
+body #faecher tr th {
+  padding: 5px;
+}
+
 body #faecher tr td {
-  min-width: 80px;
+  min-width: 100px;
   text-align: center;
   vertical-align: middle;
 }
