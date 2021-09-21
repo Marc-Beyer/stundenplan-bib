@@ -9,11 +9,6 @@ $standart-font: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: DIN;
-    src: url(../fonts/din1451altG.ttf) format("truetype");
-}
-
 body{
     background-color: $main-bg-color;
     color: $main-color; 
@@ -30,6 +25,39 @@ body{
 
     #add-panel{
         margin-top: 20px;
+    }
+
+    #standart-color-pannel{
+
+        position: absolute;
+        top: 50px;
+        left: 300px;
+
+        input[type=color]{
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            border: none;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type=color]::-webkit-color-swatch-wrapper {
+            padding: 0; 
+        }
+        input[type=color]::-webkit-color-swatch {
+            border: none;
+            border-radius: 50%;
+        }
+
+        table{
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        td{
+            padding-right: 10px;
+        }
     }
 
     h2{
@@ -84,6 +112,7 @@ body{
             }
 
         }
+
         tr:hover{
             background-color: #505050;
         }

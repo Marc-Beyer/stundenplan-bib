@@ -5,11 +5,6 @@
           box-sizing: border-box;
 }
 
-@font-face {
-  font-family: DIN;
-  src: url(../fonts/din1451altG.ttf) format("truetype");
-}
-
 body {
   background-color: #282C34;
   color: #ABB2BF;
@@ -26,6 +21,39 @@ body p {
 
 body #add-panel {
   margin-top: 20px;
+}
+
+body #standart-color-pannel {
+  position: absolute;
+  top: 50px;
+  left: 300px;
+}
+
+body #standart-color-pannel input[type=color] {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+body #standart-color-pannel input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+body #standart-color-pannel input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+body #standart-color-pannel table {
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+body #standart-color-pannel td {
+  padding-right: 10px;
 }
 
 body h2 {
