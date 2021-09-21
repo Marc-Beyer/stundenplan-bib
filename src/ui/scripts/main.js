@@ -1,7 +1,12 @@
 let faecherTable = document.querySelector("#faecher tbody");
 let addBtn = document.querySelector("#add-btn");
+let addInput = document.querySelector("#add-panel input");
+let standBgColor = document.querySelector("#standart-bg-color");
+let standColor = document.querySelector("#standart-font-color");
 
-addBtn.addEventListener("click", (e) => {});
+addBtn.addEventListener("click", (e) => {
+    sendAddDataMessage(addInput.value);
+});
 
 function changeFachEventHandler (element, colorInp, bgColorInp, checkBox) {
     sendChangeDataMessage(
@@ -37,6 +42,8 @@ function addFachToDOM(element) {
     let colorInp = document.createElement("input");
     let checkBox = document.createElement("input");
 
+    tableRow.className = "fach";
+
     delBtn.className = "del-Btn";
     delBtn.append("X");
     delBtn.addEventListener("click", (e) => {
@@ -67,9 +74,17 @@ function addFachToDOM(element) {
 }
 
 function handleResponse(data) {
+    let oldFaecher = document.querySelectorAll(".fach");
+    for (const fach of oldFaecher) {
+        fach.remove();
+    }
     for (const key in data) {
-        if (Object.hasOwnProperty.call(data, key) && key !== "__values") {
-            addFachToDOM(data[key]);
+        if (Object.hasOwnProperty.call(data, key)) {
+            if(key !== "__values"){
+
+            }else{
+                addFachToDOM(data[key]);
+            }
         }
     }
 }
@@ -91,6 +106,14 @@ function sendDeleteDataMessage(fach) {
         type: "delete-fach-data",
         fach,
     });
+}
+
+async function sendAddDataMessage(fach) {
+    let response = await browser.runtime.sendMessage({
+        type: "get-fach-data",
+        faecher: [fach],
+    });
+    handleResponse(response);
 }
 
 function sendChangeDataMessage(name, color, bgColor, isBlocked) {
