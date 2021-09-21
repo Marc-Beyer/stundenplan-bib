@@ -67,8 +67,6 @@ function addFachToDOM(element) {
 }
 
 function handleResponse(data) {
-    console.log(data);
-
     for (const key in data) {
         if (Object.hasOwnProperty.call(data, key) && key !== "__values") {
             addFachToDOM(data[key]);
@@ -96,7 +94,6 @@ function sendDeleteDataMessage(fach) {
 }
 
 function sendChangeDataMessage(name, color, bgColor, isBlocked) {
-    console.log("send", name, color, bgColor, isBlocked);
     browser.runtime.sendMessage({
         type: "change-fach-data",
         fach: {
@@ -108,13 +105,6 @@ function sendChangeDataMessage(name, color, bgColor, isBlocked) {
     });
 }
 
-function handleMessage(request, sender, sendResponse) {
-    switch (request.type) {
-        case "all-data":
-            console.log("data", request.data);
-            break;
-    }
-}
 
 browser.runtime.onMessage.addListener(handleMessage);
 
