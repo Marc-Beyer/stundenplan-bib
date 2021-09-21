@@ -111,6 +111,7 @@ function printTermine(){
                             "color: " + getColor(fachSimple) + ";" +
                             "border: none;";
 
+        terminDiv.hidden = getIsBlocked(fachSimple);
 
         document.getElementById("stundenplan-" + termin.tag).append(terminDiv);
     }
@@ -130,6 +131,15 @@ function getColor(fach){
         return "none";
     }else{
         return data[fach].color;
+    }
+}
+
+function getIsBlocked(fach){
+    if(data[fach] == undefined){
+        console.log("NOOOOOOOO");
+        return false;
+    }else{
+        return data[fach].isBlocked;
     }
 }
 
@@ -159,7 +169,8 @@ function handleResponse(pData) {
         for (const div of divs) {
             div.style.background = getBgColor(fach);
             div.style.color = getColor(fach);
-            console.log(div);
+            
+            div.hidden = getIsBlocked(fach);
         }
     }
 
