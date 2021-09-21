@@ -77,7 +77,9 @@ function printTermine(){
     newStundenplan.append(newStundenplan_fr);
     newStundenplan.append(newStundenplan_sa);
 
-    newStundenplan.style = "display: flex; height: 50vh";
+    newStundenplan.style =  "display: flex;" +
+                            "min-height: 400px;" + 
+                            "height: 50vh";
 
     stundenplanTable.append(newStundenplan);
 
@@ -106,7 +108,8 @@ function printTermine(){
                             "padding: 2px 5px;" +
                             "overflow: hidden;" +
                             "background: " + getBgColor(fachSimple) + ";" +
-                            "border: 1px solid black;";
+                            "color: " + getColor(fachSimple) + ";" +
+                            "border: none;";
 
 
         document.getElementById("stundenplan-" + termin.tag).append(terminDiv);
@@ -155,6 +158,7 @@ function handleResponse(pData) {
         let divs = document.querySelectorAll("." + fach);
         for (const div of divs) {
             div.style.background = getBgColor(fach);
+            div.style.color = getColor(fach);
             console.log(div);
         }
     }
