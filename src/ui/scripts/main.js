@@ -27,12 +27,9 @@ function addFachToDOM(element) {
     let colorInp = document.createElement("input");
     let checkBox = document.createElement("input");
 
-    tableRow.className = "fach";
-
     delBtn.className = "del-Btn";
     delBtn.append("X");
     delBtn.addEventListener("click", (e) => {
-        console.log("pressed", element.name);
         sendDeleteDataMessage(element.name);
     });
 

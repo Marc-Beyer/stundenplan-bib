@@ -48,7 +48,6 @@ function getTermine(container, tag){
 function printTermine(){
     let newStundenplan = document.createElement("div");
 
-    
     let newStundenplan_mo = document.createElement("div");
     let newStundenplan_di = document.createElement("div");
     let newStundenplan_mi = document.createElement("div");
