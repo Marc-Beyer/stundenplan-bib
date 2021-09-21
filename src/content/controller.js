@@ -186,23 +186,12 @@ function sendMessage(msg) {
     sending.then(handleResponse, handleError);
 }
 
-for (const fach of faecher) {
-    console.log(fach);
-}
-
 function handleMessage(request, sender, sendResponse) {
-
+    console.log("msg", request);
     switch (request.type) {
-        case "change-fach-data":
-            data[request.fach.name] = {
-                name: request.fach.name,
-                color: request.fach.color,
-                bgColor: request.fach.bgColor,
-                isBlocked: request.fach.isBlocked
-            } 
-
-            handleResponse(data);
-            
+        case "all-data":
+            console.log("CHANGE", request);
+            handleResponse(request.data);
             break;
     }
 }

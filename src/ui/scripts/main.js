@@ -1,10 +1,9 @@
-let blockedContainer = document.querySelector("#blocked");
 let faecherTable = document.querySelector("#faecher tbody");
 let addBtn = document.querySelector("#add-btn");
 
 addBtn.addEventListener("click", (e) => {});
 
-let changeFachEventHandler = (e) => {
+function changeFachEventHandler (element, colorInp, bgColorInp, checkBox) {
     sendChangeDataMessage(
         element.name,
         colorInp.value,
@@ -13,22 +12,20 @@ let changeFachEventHandler = (e) => {
     );
 };
 
-function appendWithTd(tableRow, element){
+function appendWithTd(tableRow, element) {
     let td = document.createElement("td");
     td.append(element);
     tableRow.append(td);
 }
 
-async function removeFach(tableRow){
-    await tableRow.animate([
-        // keyframes
-        { transform: 'translateX(0px)' },
-        { transform: 'translateX(-800px)' }
-    ], {
-        // timing options
-        duration: 250
-    }).finished;
-    
+async function removeFach(tableRow) {
+    await tableRow.animate(
+        [{ transform: "translateX(0px)" }, { transform: "translateX(-800px)" }],
+        {
+            duration: 250,
+        }
+    ).finished;
+
     tableRow.remove();
 }
 
@@ -51,15 +48,15 @@ function addFachToDOM(element) {
 
     bgColorInp.value = element.bgColor;
     bgColorInp.type = "color";
-    bgColorInp.addEventListener("change", changeFachEventHandler);
+    bgColorInp.addEventListener("change", e => changeFachEventHandler(element, colorInp, bgColorInp, checkBox));
 
     colorInp.value = element.color;
     colorInp.type = "color";
-    colorInp.addEventListener("change", changeFachEventHandler);
+    colorInp.addEventListener("change", e => changeFachEventHandler(element, colorInp, bgColorInp, checkBox));
 
     checkBox.type = "checkbox";
     checkBox.checked = !element.isBlocked;
-    checkBox.addEventListener("change", changeFachEventHandler);
+    checkBox.addEventListener("change", e => changeFachEventHandler(element, colorInp, bgColorInp, checkBox));
 
     appendWithTd(tableRow, delBtn);
     appendWithTd(tableRow, lable);
@@ -99,6 +96,7 @@ function sendDeleteDataMessage(fach) {
 }
 
 function sendChangeDataMessage(name, color, bgColor, isBlocked) {
+    console.log("send", name, color, bgColor, isBlocked);
     browser.runtime.sendMessage({
         type: "change-fach-data",
         fach: {

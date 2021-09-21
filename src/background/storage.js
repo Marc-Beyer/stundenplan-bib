@@ -1,44 +1,47 @@
 // All data stored
 const initialData = {
-    __values:{
+    __values: {
         standartBgColor: "#424242",
-        standartColor: "#dddddd"
-    }
+        standartColor: "#dddddd",
+    },
 };
 
 let data = initialData;
 
 // Get the storage
-function getStorage(){
-    browser.storage.local.get(storedData => {
+function getStorage() {
+    console.log("getStorage");
+    browser.storage.local.get((storedData) => {
         data = storedData.data;
-        if(data == undefined){
+        if (data == undefined) {
+            console.log("getStorage undefined");
             data = initialData;
-        }else{
-            browser.runtime.sendMessage({
-                type: "all-data",
-                data
-            });
         }
     });
 }
 
-// If the storage has changed invoke getStorage() and update data 
-browser.storage.onChanged.addListener(getStorage);
+async function updatedStorage() {
+    let querying = await browser.tabs.query({});
+    for (let tab of querying) {
+        browser.tabs.sendMessage(tab.id, { type: "all-data", data });
+    }
+}
+
+// If the storage has changed invoke getStorage() and update data
+browser.storage.onChanged.addListener(updatedStorage);
 
 // Get the Storage at the start
 getStorage();
 
 function handleMessage(request, sender, sendResponse) {
-
     switch (request.type) {
         case "change-fach-data":
             data[request.fach.name] = {
                 name: request.fach.name,
                 color: request.fach.color,
                 bgColor: request.fach.bgColor,
-                isBlocked: request.fach.isBlocked
-            } 
+                isBlocked: request.fach.isBlocked,
+            };
             console.log("change", data[request.fach.name]);
             browser.storage.local.set(data);
             break;
@@ -47,16 +50,14 @@ function handleMessage(request, sender, sendResponse) {
             browser.storage.local.set(data);
             break;
         case "get-fach-data":
-
             let responseArr = [];
             for (const fach of request.faecher) {
-                console.log("fach", fach);
-                if(data[fach] == undefined){
+                if (data[fach] == undefined) {
                     data[fach] = {
                         name: fach,
                         color: data.__values.standartColor,
                         bgColor: data.__values.standartBgColor,
-                        isBlocked: false
+                        isBlocked: false,
                     };
                     browser.storage.local.set(data);
                 }
@@ -68,5 +69,5 @@ function handleMessage(request, sender, sendResponse) {
             break;
     }
 }
-  
+
 browser.runtime.onMessage.addListener(handleMessage);
