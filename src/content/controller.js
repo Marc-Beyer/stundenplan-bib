@@ -1,9 +1,7 @@
 console.log("Start");
 
 const stundenplanTable = document.querySelector("#stundenplan");
-console.log(stundenplanTable);
 const stundenplanInnerTable = stundenplanTable.querySelectorAll("table tr")[2];
-console.log(stundenplanInnerTable);
 
 const tageContainer = stundenplanInnerTable.querySelectorAll("td");
 console.log(tageContainer);
@@ -47,6 +45,7 @@ function getTermine(container, tag){
 
 function printTermine(){
     let newStundenplan = document.createElement("div");
+    newStundenplan.id = "new-stundenplan";
 
     let newStundenplan_mo = document.createElement("div");
     let newStundenplan_di = document.createElement("div");
@@ -154,6 +153,32 @@ getTermine(containerMi, "mi");
 getTermine(containerDo, "do");
 getTermine(containerFr, "fr");
 getTermine(containerSa, "sa");
+
+(function addOldBtn(){
+    let oldBtn = document.createElement("button");
+    oldBtn.append("old");
+    oldBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        let newStundenplan = document.getElementById("new-stundenplan");
+
+        if(newStundenplan.style.display === "flex"){
+            for (let index = 0; index < 6; index++) {
+                const element = tageContainer[index];
+                element.style.display = "";
+            }
+            newStundenplan.style.display = "none";
+        }else{
+            for (let index = 0; index < 6; index++) {
+                const element = tageContainer[index];
+                element.style.display = "none";
+            }
+            newStundenplan.style.display = "flex";
+        }
+        
+    });
+    stundenplanTable.insertAdjacentElement("afterbegin", oldBtn);
+})();
 
 console.log(termine);
 printTermine();
