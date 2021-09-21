@@ -25,17 +25,18 @@ body{
         margin-top: 20px;
         width: 300px;
 
-        .fach{
-            margin-bottom: 10px;
+        border-collapse:separate;
+        border-spacing: 0 10px;
 
-            lable,
-            input{
-                flex: 1;
+        tr{
+
+            td{
+                min-width: 80px;
+                text-align: center;
+                vertical-align: middle;
             }
 
             button{
-                margin: 0 10px 0 0;
-                padding: 0 3px;
                 background: none;
                 color: white;
                 font-weight: bold;
@@ -46,9 +47,25 @@ body{
                 cursor: pointer;
             }
 
-            
+            input[type=color]{
+                border-radius: 50%;
+                height: 20px;
+                width: 20px;
+                border: none;
+                outline: none;
+                -webkit-appearance: none;
+            }
+
+            input[type=color]::-webkit-color-swatch-wrapper {
+                padding: 0; 
+            }
+            input[type=color]::-webkit-color-swatch {
+                border: none;
+                border-radius: 50%;
+            }
+
         }
-        .fach:hover{
+        tr:hover{
             background-color: #505050;
         }
     }

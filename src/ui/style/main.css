@@ -22,33 +22,46 @@ body h3 {
 body #faecher {
   margin-top: 20px;
   width: 300px;
+  border-collapse: separate;
+  border-spacing: 0 10px;
 }
 
-body #faecher .fach {
-  margin-bottom: 10px;
+body #faecher tr td {
+  min-width: 80px;
+  text-align: center;
+  vertical-align: middle;
 }
 
-body #faecher .fach lable,
-body #faecher .fach input {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-body #faecher .fach button {
-  margin: 0 10px 0 0;
-  padding: 0 3px;
+body #faecher tr button {
   background: none;
   color: white;
   font-weight: bold;
   border: none;
 }
 
-body #faecher .fach button:hover {
+body #faecher tr button:hover {
   cursor: pointer;
 }
 
-body #faecher .fach:hover {
+body #faecher tr input[type=color] {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+body #faecher tr input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+body #faecher tr input[type=color]::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+body #faecher tr:hover {
   background-color: #505050;
 }
 /*# sourceMappingURL=main.css.map */
