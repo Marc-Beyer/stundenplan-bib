@@ -13,15 +13,21 @@ body{
 
     padding: 10px;
 
+    #add-panel{
+        margin-top: 20px;
+    }
+
     h3{
-        margin-top: 20px 0;
+        margin-top: 20px;
     }
 
     #color{
+        margin-top: 20px;
         width: 300px;
 
         .fach{
             display: flex;
+            margin-bottom: 10px;
 
             lable,
             input{
@@ -31,8 +37,14 @@ body{
             button{
                 margin: 0 10px 0 0;
                 padding: 0 3px;
-                background: #d80000;
+                background: none;
+                color: white;
                 font-weight: bold;
+                border: none;
+            }
+
+            button:hover{
+                cursor: pointer;
             }
 
             
@@ -43,9 +55,4 @@ body{
     }
 
     
-
-    #add-panel{
-        margin-top: 20px;
-
-    }
 }

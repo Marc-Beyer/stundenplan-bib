@@ -11,11 +11,16 @@ body {
   padding: 10px;
 }
 
+body #add-panel {
+  margin-top: 20px;
+}
+
 body h3 {
-  margin-top: 20px 0;
+  margin-top: 20px;
 }
 
 body #color {
+  margin-top: 20px;
   width: 300px;
 }
 
@@ -23,6 +28,7 @@ body #color .fach {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 body #color .fach lable,
@@ -35,15 +41,17 @@ body #color .fach input {
 body #color .fach button {
   margin: 0 10px 0 0;
   padding: 0 3px;
-  background: #d80000;
+  background: none;
+  color: white;
   font-weight: bold;
+  border: none;
+}
+
+body #color .fach button:hover {
+  cursor: pointer;
 }
 
 body #color .fach:hover {
   background-color: #505050;
-}
-
-body #add-panel {
-  margin-top: 20px;
 }
 /*# sourceMappingURL=main.css.map */
