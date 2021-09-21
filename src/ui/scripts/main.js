@@ -105,7 +105,4 @@ function sendChangeDataMessage(name, color, bgColor, isBlocked) {
     });
 }
 
-
-browser.runtime.onMessage.addListener(handleMessage);
-
 sendGetDataMessage();
