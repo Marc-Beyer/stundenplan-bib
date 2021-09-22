@@ -148,3 +148,12 @@ function sendChangeDataMessage(name, color, bgColor, isBlocked) {
 }
 
 sendGetDataMessage();
+
+function handleMessage(request, sender, sendResponse) {
+    console.log("request", request);
+    switch (request.type) {
+        case "all-data":
+            handleResponse(request.data);
+            break;
+    }
+}

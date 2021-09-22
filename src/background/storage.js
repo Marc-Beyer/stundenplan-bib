@@ -10,17 +10,17 @@ let data = initialData;
 
 // Get the storage
 function getStorage() {
-    console.log("getStorage");
     browser.storage.local.get((storedData) => {
         data = storedData.data;
         if (data == undefined) {
-            console.log("getStorage undefined");
             data = initialData;
         }
     });
 }
 
 async function updatedStorage() {
+    browser.runtime.sendMessage({ type: "all-data", data });
+
     let querying = await browser.tabs.query({});
     for (let tab of querying) {
         browser.tabs.sendMessage(tab.id, { type: "all-data", data });
@@ -39,6 +39,7 @@ function handleMessage(request, sender, sendResponse) {
             data.__values = request.values;
             browser.storage.local.set(data);
             break;
+
         case "change-fach-data":
             data[request.fach.name] = {
                 name: request.fach.name,
@@ -46,13 +47,24 @@ function handleMessage(request, sender, sendResponse) {
                 bgColor: request.fach.bgColor,
                 isBlocked: request.fach.isBlocked,
             };
-            console.log("change", data[request.fach.name]);
             browser.storage.local.set(data);
             break;
+
+        case "change-fach-data-in-range":
+            for (const key in request.faecher) {
+                if (Object.hasOwnProperty.call(request.faecher, key)) {
+                    data[key] = request.faecher[key];
+                    console.log(request.faecher[key]);
+                }
+            }
+            browser.storage.local.set(data);
+            break;
+
         case "delete-fach-data":
             data[request.fach] = undefined;
             browser.storage.local.set(data);
             break;
+
         case "get-fach-data":
             let responseArr = [];
             for (const fach of request.faecher) {
@@ -67,7 +79,6 @@ function handleMessage(request, sender, sendResponse) {
                 }
                 responseArr.push(data[fach]);
             }
-            console.log(responseArr);
 
             sendResponse(data);
             break;
