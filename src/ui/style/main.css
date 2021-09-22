@@ -15,17 +15,17 @@ body {
 
 body p {
   position: absolute;
-  top: 185px;
+  top: 105px;
   left: 700px;
 }
 
 body #add-panel {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 body #standart-color-pannel {
   position: absolute;
-  top: 50px;
+  top: 105px;
   left: 300px;
 }
 
@@ -57,7 +57,7 @@ body #standart-color-pannel td {
 }
 
 body h2 {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 body #faecher {
