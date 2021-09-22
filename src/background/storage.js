@@ -1,8 +1,8 @@
 // All data stored
 const initialData = {
     __values: {
-        standartBgColor: "#D5DCED",
-        standartColor: "#000000",
+        standardBgColor: "#D5DCED",
+        standardColor: "#000000",
     },
 };
 
@@ -71,8 +71,8 @@ function handleMessage(request, sender, sendResponse) {
                 if (data[fach] == undefined) {
                     data[fach] = {
                         name: fach,
-                        color: data.__values.standartColor,
-                        bgColor: data.__values.standartBgColor,
+                        color: data.__values.standardColor,
+                        bgColor: data.__values.standardBgColor,
                         isBlocked: false,
                     };
                     browser.storage.local.set(data);

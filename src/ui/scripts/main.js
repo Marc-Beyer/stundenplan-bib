@@ -1,23 +1,23 @@
 let faecherTable = document.querySelector("#faecher tbody");
 let addBtn = document.querySelector("#add-btn");
 let addInput = document.querySelector("#add-panel input");
-let standBgColor = document.querySelector("#standart-bg-color");
-let standColor = document.querySelector("#standart-font-color");
+let standardBgColor = document.querySelector("#standard-bg-color");
+let standardColor = document.querySelector("#standard-font-color");
 
 let data = {};
 
-function changeStandColor(){
+function changestandardColor(){
     browser.runtime.sendMessage({
         type: "change-values-data",
         values: {
-            standartBgColor: standBgColor.value,
-            standartColor: standColor.value,
+            standardBgColor: standardBgColor.value,
+            standardColor: standardColor.value,
         }
     });
 };
 
-standBgColor.addEventListener("change", changeStandColor);
-standColor.addEventListener("change", changeStandColor);
+standardBgColor.addEventListener("change", changestandardColor);
+standardColor.addEventListener("change", changestandardColor);
 
 
 addBtn.addEventListener("click", (e) => {
@@ -39,7 +39,7 @@ function appendWithTd(tableRow, element) {
     tableRow.append(td);
 }
 
-async function removeFach(tableRow) {
+async function removeFach(tableRow, element) {
     await tableRow.animate(
         [{ transform: "translateX(0px)" }, { transform: "translateX(-800px)" }],
         {
@@ -47,7 +47,7 @@ async function removeFach(tableRow) {
         }
     ).finished;
 
-    tableRow.remove();
+    sendDeleteDataMessage(element.name);
 }
 
 function addFachToDOM(element) {
@@ -63,8 +63,7 @@ function addFachToDOM(element) {
     delBtn.className = "del-Btn";
     delBtn.append("X");
     delBtn.addEventListener("click", (e) => {
-        sendDeleteDataMessage(element.name);
-        removeFach(tableRow);
+        removeFach(tableRow, element);
     });
 
     lable.append(element.name);
@@ -91,7 +90,6 @@ function addFachToDOM(element) {
 
 function handleResponse(newData) {
     data = newData;
-    console.log("handleResponse(data)", data);
     let oldFaecher = document.querySelectorAll(".fach");
     for (const fach of oldFaecher) {
         fach.remove();
@@ -99,14 +97,18 @@ function handleResponse(newData) {
     for (const key in data) {
         if (Object.hasOwnProperty.call(data, key)) {
             if(key === "__values"){
-                standBgColor.value = data[key].standartBgColor;
-                standColor.value = data[key].standartColor;
+                standardBgColor.value = data[key].standardBgColor;
+                standardColor.value = data[key].standardColor;
             }else{
-                addFachToDOM(data[key]);
+                if(data[key]) addFachToDOM(data[key]);
             }
         }
     }
 }
+
+/**
+ * Handle massages
+ */
 
 function handleError(error) {
     console.log(`Error: ${error}`);
@@ -150,10 +152,11 @@ function sendChangeDataMessage(name, color, bgColor, isBlocked) {
 sendGetDataMessage();
 
 function handleMessage(request, sender, sendResponse) {
-    console.log("request", request);
     switch (request.type) {
         case "all-data":
             handleResponse(request.data);
             break;
     }
 }
+
+browser.runtime.onMessage.addListener(handleMessage);
