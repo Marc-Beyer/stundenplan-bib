@@ -44,15 +44,15 @@ function getTermine(container, tag){
 }
 
 function printTermine(){
-    let newStundenplan = document.createElement("div");
+    let newStundenplan = document.createElement("table");
     newStundenplan.id = "new-stundenplan";
 
-    let newStundenplan_mo = document.createElement("div");
-    let newStundenplan_di = document.createElement("div");
-    let newStundenplan_mi = document.createElement("div");
-    let newStundenplan_do = document.createElement("div");
-    let newStundenplan_fr = document.createElement("div");
-    let newStundenplan_sa = document.createElement("div");
+    let newStundenplan_mo = document.createElement("td");
+    let newStundenplan_di = document.createElement("td");
+    let newStundenplan_mi = document.createElement("td");
+    let newStundenplan_do = document.createElement("td");
+    let newStundenplan_fr = document.createElement("td");
+    let newStundenplan_sa = document.createElement("td");
 
     newStundenplan_mo.id = "stundenplan-mo";
     newStundenplan_di.id = "stundenplan-di";
@@ -61,12 +61,12 @@ function printTermine(){
     newStundenplan_fr.id = "stundenplan-fr";
     newStundenplan_sa.id = "stundenplan-sa";
 
-    newStundenplan_mo.style = "display:inline-block; flex:1; position:relative;";
-    newStundenplan_di.style = "display:inline-block; flex:1; position:relative;";
-    newStundenplan_mi.style = "display:inline-block; flex:1; position:relative;";
-    newStundenplan_do.style = "display:inline-block; flex:1; position:relative;";
-    newStundenplan_fr.style = "display:inline-block; flex:1; position:relative;";
-    newStundenplan_sa.style = "display:inline-block; flex:1; position:relative;";
+    newStundenplan_mo.style = "display:inline-block; flex:1; position:relative; border-right: 2px solid white;";
+    newStundenplan_di.style = "display:inline-block; flex:1; position:relative; border-right: 2px solid white;";
+    newStundenplan_mi.style = "display:inline-block; flex:1; position:relative; border-right: 2px solid white;";
+    newStundenplan_do.style = "display:inline-block; flex:1; position:relative; border-right: 2px solid white;";
+    newStundenplan_fr.style = "display:inline-block; flex:1; position:relative; border-right: 2px solid white;";
+    newStundenplan_sa.style = "display:inline-block; flex:1; position:relative; border-right: 2px solid white;";
 
     newStundenplan.append(newStundenplan_mo);
     newStundenplan.append(newStundenplan_di);
