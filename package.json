@@ -1,0 +1,25 @@
+{
+  "name": "stundenplan-bib",
+  "version": "1.0.0",
+  "description": "Build the web-extention",
+  "main": "web-ext.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:firefox": "web-ext run --source-dir ./src/",
+    "start:firefox-android": "web-ext run --target=firefox-android --source-dir ./src/"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marc-Beyer/stundenplan-bib.git"
+  },
+  "author": "Marc Beyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marc-Beyer/stundenplan-bib/issues"
+  },
+  "homepage": "https://github.com/Marc-Beyer/stundenplan-bib#readme",
+  "devDependencies": {
+    "web-ext": "^6.4.0"
+  }
+}
