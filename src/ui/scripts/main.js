@@ -4,6 +4,8 @@ let addInput = document.querySelector("#add-panel input");
 let standBgColor = document.querySelector("#standart-bg-color");
 let standColor = document.querySelector("#standart-font-color");
 
+let data = {};
+
 function changeStandColor(){
     browser.runtime.sendMessage({
         type: "change-values-data",
@@ -87,7 +89,8 @@ function addFachToDOM(element) {
     faecherTable.append(tableRow);
 }
 
-function handleResponse(data) {
+function handleResponse(newData) {
+    data = newData;
     console.log("handleResponse(data)", data);
     let oldFaecher = document.querySelectorAll(".fach");
     for (const fach of oldFaecher) {
