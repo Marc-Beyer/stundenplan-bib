@@ -1,7 +1,7 @@
 // All data stored
 const initialData = {
     __values: {
-        standartBgColor: "#ffdddd",
+        standartBgColor: "#D5DCED",
         standartColor: "#000000",
     },
 };
