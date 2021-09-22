@@ -86,7 +86,12 @@ function printTermine(){
         let terminDiv = document.createElement("div");
         terminDiv.append(termin.time);
         terminDiv.append(document.createElement("br"));
-        terminDiv.append(termin.fach + " " + termin.raum);
+        terminDiv.append(termin.fach);
+        terminDiv.append(document.createElement("br"));
+        let span = document.createElement("span");
+        span.append(termin.raum)
+        span.style = "font-weight: bold;";
+        terminDiv.append(span);
         terminDiv.append(document.createElement("br"));
         terminDiv.append(termin.dozent);
 
