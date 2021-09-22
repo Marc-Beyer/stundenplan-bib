@@ -76,7 +76,7 @@ function printTermine(){
     newStundenplan.append(newStundenplan_sa);
 
     newStundenplan.style =  "display: flex;" +
-                            "min-height: 400px;" + 
+                            "min-height: 500px;" + 
                             "height: 50vh";
 
     stundenplanTable.append(newStundenplan);
@@ -145,11 +145,14 @@ function getIsBlocked(fach){
     }
 }
 
+
+let _mapMaxValue = 17.0;
+let _mapMinValue = 8.0;
+let _mapScale = (100.0/(_mapMaxValue - _mapMinValue));
+
 function map(value){
-    let maxValue = 17;
-    let minValue = 8;
-    let scale = (100/(maxValue- minValue));
-    return (value - minValue) * scale;
+    let float = parseInt(value) + (parseFloat(value) % 1 * (100/60) );
+    return (float - _mapMinValue) * _mapScale;
 }
 
 getTermine(containerMo, "mo");
