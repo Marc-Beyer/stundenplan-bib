@@ -1,7 +1,7 @@
 $main-bg-color: #282C34;
 $main-color: #ABB2BF;
-$standart-font-size: 15px;
-$standart-font: Arial, Helvetica, sans-serif;
+$standard-font-size: 15px;
+$standard-font: Arial, Helvetica, sans-serif;
 
 *{
     margin: 0%;
@@ -12,8 +12,8 @@ $standart-font: Arial, Helvetica, sans-serif;
 body{
     background-color: $main-bg-color;
     color: $main-color; 
-    font-size: $standart-font-size;
-    font-family: $standart-font;
+    font-size: $standard-font-size;
+    font-family: $standard-font;
 
     padding: 20px;
 
@@ -27,7 +27,7 @@ body{
         margin-top: 50px;
     }
 
-    #standart-color-pannel{
+    #standard-color-pannel{
 
         position: absolute;
         top: 105px;

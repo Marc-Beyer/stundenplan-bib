@@ -23,13 +23,13 @@ body #add-panel {
   margin-top: 50px;
 }
 
-body #standart-color-pannel {
+body #standard-color-pannel {
   position: absolute;
   top: 105px;
   left: 300px;
 }
 
-body #standart-color-pannel input[type=color] {
+body #standard-color-pannel input[type=color] {
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -38,21 +38,21 @@ body #standart-color-pannel input[type=color] {
   -webkit-appearance: none;
 }
 
-body #standart-color-pannel input[type=color]::-webkit-color-swatch-wrapper {
+body #standard-color-pannel input[type=color]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-body #standart-color-pannel input[type=color]::-webkit-color-swatch {
+body #standard-color-pannel input[type=color]::-webkit-color-swatch {
   border: none;
   border-radius: 50%;
 }
 
-body #standart-color-pannel table {
+body #standard-color-pannel table {
   border-collapse: collapse;
   margin-top: 10px;
 }
 
-body #standart-color-pannel td {
+body #standard-color-pannel td {
   padding-right: 10px;
 }
 
