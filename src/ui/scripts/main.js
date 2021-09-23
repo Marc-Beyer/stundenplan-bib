@@ -22,6 +22,7 @@ standardColor.addEventListener("change", changestandardColor);
 
 addBtn.addEventListener("click", (e) => {
     sendAddDataMessage(addInput.value);
+    addInput.value = "";
 });
 
 function changeFachEventHandler (element, colorInp, bgColorInp, checkBox) {
