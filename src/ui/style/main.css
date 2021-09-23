@@ -60,6 +60,20 @@ body h2 {
   margin-top: 60px;
 }
 
+body #upload-download-pannel {
+  margin-top: 20px;
+}
+
+body #upload-download-pannel #download-btn {
+  width: 100px;
+  height: 20px;
+}
+
+body #upload-download-pannel #upload-btn {
+  width: 100px;
+  height: 20px;
+}
+
 body #faecher {
   margin-top: 10px;
   width: 300px;

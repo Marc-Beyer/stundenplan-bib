@@ -64,6 +64,21 @@ body{
         margin-top: 60px;
     }
 
+    #upload-download-pannel{
+
+        margin-top: 20px;
+
+        #download-btn{
+            width: 100px;
+            height: 20px;
+        }
+
+        #upload-btn{
+            width: 100px;
+            height: 20px;
+        }
+    }
+
     #faecher{
         margin-top: 10px;
         width: 300px;
@@ -117,6 +132,5 @@ body{
             background-color: #505050;
         }
     }
-
     
 }
