@@ -36,7 +36,6 @@
 	"background": {
 		"scripts": [
 			"browser-polyfill.min.js",
-			"shared/container.js",
 			"background/storage.js",
 			"background/browserAction.js"
 
