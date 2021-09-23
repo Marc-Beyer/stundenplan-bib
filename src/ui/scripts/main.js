@@ -6,38 +6,25 @@ let standardColor = document.querySelector("#standard-font-color");
 
 let data = {};
 
-function changestandardColor(){
-    browser.runtime.sendMessage({
-        type: "change-values-data",
-        values: {
-            standardBgColor: standardBgColor.value,
-            standardColor: standardColor.value,
-        }
-    });
-};
+function changestandardColor() {
+    sendMsg(createChangeValuesDataMsg(standardBgColor.value, standardColor.value));
+}
 
 standardBgColor.addEventListener("change", changestandardColor);
 standardColor.addEventListener("change", changestandardColor);
 
-
 addBtn.addEventListener("click", (e) => {
-    sendAddDataMessage(addInput.value);
+    sendMsg(createGetDataMsg(addInput.value));
     addInput.value = "";
 });
 
-function changeFachEventHandler (element, colorInp, bgColorInp, checkBox) {
-    sendChangeDataMessage(
+function changeFachEventHandler(element, colorInp, bgColorInp, checkBox) {
+    sendMsg(createChangeDataMsg(
         element.name,
         colorInp.value,
         bgColorInp.value,
         !checkBox.checked
-    );
-};
-
-function appendWithTd(tableRow, element) {
-    let td = document.createElement("td");
-    td.append(element);
-    tableRow.append(td);
+    ));
 }
 
 async function removeFach(tableRow, element) {
@@ -48,7 +35,13 @@ async function removeFach(tableRow, element) {
         }
     ).finished;
 
-    sendDeleteDataMessage(element.name);
+    sendMsg(createDeleteDataMsg(element.name));
+}
+
+function appendWithTd(tableRow, element) {
+    let td = document.createElement("td");
+    td.append(element);
+    tableRow.append(td);
 }
 
 function addFachToDOM(element) {
@@ -71,15 +64,21 @@ function addFachToDOM(element) {
 
     bgColorInp.value = element.bgColor;
     bgColorInp.type = "color";
-    bgColorInp.addEventListener("change", e => changeFachEventHandler(element, colorInp, bgColorInp, checkBox));
+    bgColorInp.addEventListener("change", (e) =>
+        changeFachEventHandler(element, colorInp, bgColorInp, checkBox)
+    );
 
     colorInp.value = element.color;
     colorInp.type = "color";
-    colorInp.addEventListener("change", e => changeFachEventHandler(element, colorInp, bgColorInp, checkBox));
+    colorInp.addEventListener("change", (e) =>
+        changeFachEventHandler(element, colorInp, bgColorInp, checkBox)
+    );
 
     checkBox.type = "checkbox";
     checkBox.checked = !element.isBlocked;
-    checkBox.addEventListener("change", e => changeFachEventHandler(element, colorInp, bgColorInp, checkBox));
+    checkBox.addEventListener("change", (e) =>
+        changeFachEventHandler(element, colorInp, bgColorInp, checkBox)
+    );
 
     appendWithTd(tableRow, delBtn);
     appendWithTd(tableRow, lable);
@@ -97,49 +96,43 @@ function handleResponse(newData) {
     }
     for (const key in data) {
         if (Object.hasOwnProperty.call(data, key)) {
-            if(key === "__values"){
+            if (key === "__values") {
                 standardBgColor.value = data[key].standardBgColor;
                 standardColor.value = data[key].standardColor;
-            }else{
-                if(data[key]) addFachToDOM(data[key]);
+            } else {
+                if (data[key]) addFachToDOM(data[key]);
             }
         }
     }
 }
 
 /**
- * Handle massages
+ * MASSAGE
  */
 
-function handleError(error) {
-    console.log(`Error: ${error}`);
-}
+browser.runtime.onMessage.addListener( (msg) => {
+    switch (request.type) {
+        case "all-data":
+            handleResponse(request.data);
+            break;
+    }
+});
 
-function sendGetDataMessage() {
-    const sending = browser.runtime.sendMessage({
-        type: "get-fach-data",
-        faecher: [],
-    });
-    sending.then(handleResponse, handleError);
-}
-
-function sendDeleteDataMessage(fach) {
-    browser.runtime.sendMessage({
-        type: "delete-fach-data",
-        fach,
+function sendMsg(msg) {
+    browser.runtime.sendMessage(msg).catch((err) => {
+        console.log(err);
     });
 }
 
-async function sendAddDataMessage(fach) {
-    let response = await browser.runtime.sendMessage({
+function createGetDataMsg(fach) {
+    return {
         type: "get-fach-data",
         faecher: [fach],
-    });
-    handleResponse(response);
+    };
 }
 
-function sendChangeDataMessage(name, color, bgColor, isBlocked) {
-    browser.runtime.sendMessage({
+function createChangeDataMsg(name, color, bgColor, isBlocked) {
+    return {
         type: "change-fach-data",
         fach: {
             name,
@@ -147,17 +140,22 @@ function sendChangeDataMessage(name, color, bgColor, isBlocked) {
             bgColor,
             isBlocked,
         },
-    });
+    };
 }
 
-sendGetDataMessage();
-
-function handleMessage(request, sender, sendResponse) {
-    switch (request.type) {
-        case "all-data":
-            handleResponse(request.data);
-            break;
-    }
+function createDeleteDataMsg(fach) {
+    return {
+        type: "delete-fach-data",
+        fach,
+    };
 }
 
-browser.runtime.onMessage.addListener(handleMessage);
+function createChangeValuesDataMsg(standardBgColor, standardColor){
+    return {
+        type: "change-values-data",
+        values: {
+            standardBgColor,
+            standardColor
+        }
+    };
+}
