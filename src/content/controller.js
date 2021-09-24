@@ -191,8 +191,8 @@ getTermine(containerSa, "sa");
 console.log(termine);
 printTermine();
 
-function handleResponse(pData) {
-    data = pData;
+function setNewData(newData) {
+    data = newData;
     console.log(data);
 
     for (const fach of faecher) {
@@ -211,24 +211,35 @@ function handleError(error) {
     console.log(`Error: ${error}`);
 }
 
-function sendMessage(msg) {
-    const sending = browser.runtime.sendMessage({
-        type: "get-fach-data",
-        faecher: msg
-    });
-    sending.then(handleResponse, handleError);
-}
+/**
+ * MESSAGES
+ */
 
-function handleMessage(request, sender, sendResponse) {
-    console.log("msg", request);
-    switch (request.type) {
+browser.runtime.onMessage.addListener((msg) => {
+    switch (msg.type) {
         case "all-data":
-            console.log("CHANGE", request);
-            handleResponse(request.data);
+            console.log("CHANGE", msg);
+            setNewData(msg.data);
             break;
     }
+});
+
+function sendMessage(msg) {
+    browser.runtime.sendMessage(msg).catch((err) => {
+        console.log(err);
+    });
 }
   
-browser.runtime.onMessage.addListener(handleMessage);
+function createGetDataMsg(faecher) {
+    if (faecher) {
+        return {
+            type: "get-fach-data",
+            faecher
+        };
+    }
+    return {
+        type: "get-fach-data",
+    };
+}
 
-sendMessage(faecher);
+sendMessage(createGetDataMsg(faecher));

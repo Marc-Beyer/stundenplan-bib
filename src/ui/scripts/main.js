@@ -6,8 +6,13 @@ let standardColor = document.querySelector("#standard-font-color");
 
 let data = {};
 
+// Send a message to get all date from backend
+sendMsg(createGetDataMsg());
+
 function changestandardColor() {
-    sendMsg(createChangeValuesDataMsg(standardBgColor.value, standardColor.value));
+    sendMsg(
+        createChangeValuesDataMsg(standardBgColor.value, standardColor.value)
+    );
 }
 
 standardBgColor.addEventListener("change", changestandardColor);
@@ -19,12 +24,14 @@ addBtn.addEventListener("click", (e) => {
 });
 
 function changeFachEventHandler(element, colorInp, bgColorInp, checkBox) {
-    sendMsg(createChangeDataMsg(
-        element.name,
-        colorInp.value,
-        bgColorInp.value,
-        !checkBox.checked
-    ));
+    sendMsg(
+        createChangeDataMsg(
+            element.name,
+            colorInp.value,
+            bgColorInp.value,
+            !checkBox.checked
+        )
+    );
 }
 
 async function removeFach(tableRow, element) {
@@ -88,7 +95,7 @@ function addFachToDOM(element) {
     faecherTable.append(tableRow);
 }
 
-function handleResponse(newData) {
+function setNewData(newData) {
     data = newData;
     let oldFaecher = document.querySelectorAll(".fach");
     for (const fach of oldFaecher) {
@@ -110,10 +117,10 @@ function handleResponse(newData) {
  * MASSAGE
  */
 
-browser.runtime.onMessage.addListener( (msg) => {
-    switch (request.type) {
+browser.runtime.onMessage.addListener((msg) => {
+    switch (msg.type) {
         case "all-data":
-            handleResponse(request.data);
+            setNewData(msg.data);
             break;
     }
 });
@@ -124,10 +131,15 @@ function sendMsg(msg) {
     });
 }
 
-function createGetDataMsg(fach) {
+function createGetDataMsg(fach = null) {
+    if (fach) {
+        return {
+            type: "get-fach-data",
+            faecher: [fach],
+        };
+    }
     return {
         type: "get-fach-data",
-        faecher: [fach],
     };
 }
 
@@ -150,12 +162,12 @@ function createDeleteDataMsg(fach) {
     };
 }
 
-function createChangeValuesDataMsg(standardBgColor, standardColor){
+function createChangeValuesDataMsg(standardBgColor, standardColor) {
     return {
         type: "change-values-data",
         values: {
             standardBgColor,
-            standardColor
-        }
+            standardColor,
+        },
     };
 }
