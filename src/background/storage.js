@@ -15,17 +15,23 @@ function getStorage() {
         if (data == undefined) {
             data = initialData;
         }
+    }).catch((err) => {
+        console.log(err);
     });
 }
 
 async function updatedStorage() {
     if(configTabId){
-        browser.runtime.sendMessage({ type: "all-data", data });
+        browser.runtime.sendMessage({ type: "all-data", data }).catch((err) => {
+            console.log(err);
+        });
     }
 
     let querying = await browser.tabs.query({ url: "https://intranet.bib.de/tiki-index.php?page=Wochenplan" });
     for (let tab of querying) {
-        browser.tabs.sendMessage(tab.id, { type: "all-data", data });
+        browser.tabs.sendMessage(tab.id, { type: "all-data", data }).catch((err) => {
+            console.log(err);
+        });
     }
 }
 
