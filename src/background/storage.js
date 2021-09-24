@@ -9,15 +9,13 @@ const initialData = {
 let data = initialData;
 
 // Get the storage
-function getStorage() {
-    browser.storage.local.get((storedData) => {
-        data = storedData.data;
-        if (data == undefined) {
-            data = initialData;
-        }
-    }).catch((err) => {
-        console.log(err);
+async function getStorage() {
+    data = await browser.storage.local.get(["data"]).catch((err) => {
+        data = initialData;
     });
+    if (!data.__values) {
+        data = initialData;
+    }
 }
 
 async function updatedStorage() {
@@ -62,7 +60,6 @@ function handleMessage(msg) {
             for (const key in msg.faecher) {
                 if (Object.hasOwnProperty.call(msg.faecher, key)) {
                     data[key] = msg.faecher[key];
-                    console.log(msg.faecher[key]);
                 }
             }
             browser.storage.local.set(data);
