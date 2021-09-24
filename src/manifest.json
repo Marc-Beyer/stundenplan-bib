@@ -47,6 +47,7 @@
 			"matches": ["https://intranet.bib.de/tiki-index.php?page=Wochenplan"],
 			"js": [
 				"browser-polyfill.min.js",
+				"content/helper.js",
 				"content/controller.js"
 			]
 		}

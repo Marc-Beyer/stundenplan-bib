@@ -1,10 +1,6 @@
-console.log("Start");
-
 const stundenplanTable = document.querySelector("#stundenplan");
 const stundenplanInnerTable = stundenplanTable.querySelectorAll("table tr")[2];
-
 const tageContainer = stundenplanInnerTable.querySelectorAll("td");
-console.log(tageContainer);
 
 const containerMo = tageContainer[0];
 const containerDi = tageContainer[1];
@@ -17,33 +13,40 @@ let data = {};
 let termine = [];
 let faecher = [];
 
-function getTermine(container, tag){
-    container.innerText.split("\n\n").forEach((element)=>{
-        if(element === "")return;
-        let infos = element.split("\n");
-        let termin = {
-            tag:    tag,
-            time:   infos[0],
-            dozent: infos[1],
-            raum:   infos[2],
-            fach:   infos[3]
-        };
-        if(termin.raum === undefined){
-            termin.fach = termin.dozent;
-            termin.raum = termin.time;
-            termin.time = "";
-            termin.dozent = "";
-        }else if(termin.fach === undefined){
-            termin.fach = termin.raum;
-            termin.raum = termin.dozent;
-            termin.dozent = "";
-        }
-        termine.push(termin);
-    });
-    container.style.display = "none";
-}
+getTermine(containerMo, "mo");
+getTermine(containerDi, "di");
+getTermine(containerMi, "mi");
+getTermine(containerDo, "do");
+getTermine(containerFr, "fr");
+getTermine(containerSa, "sa");
 
-function printTermine(){
+(function addOldBtn(){
+    let oldBtn = document.createElement("button");
+    oldBtn.append("old");
+    oldBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        let newStundenplan = document.getElementById("new-stundenplan");
+
+        if(newStundenplan.style.display === "flex"){
+            for (let index = 0; index < 6; index++) {
+                const element = tageContainer[index];
+                element.style.display = "";
+            }
+            newStundenplan.style.display = "none";
+        }else{
+            for (let index = 0; index < 6; index++) {
+                const element = tageContainer[index];
+                element.style.display = "none";
+            }
+            newStundenplan.style.display = "flex";
+        }
+        
+    });
+    stundenplanTable.insertAdjacentElement("afterbegin", oldBtn);
+})();
+
+(function printTermine(){
     let newStundenplan = document.createElement("table");
     newStundenplan.id = "new-stundenplan";
 
@@ -119,81 +122,36 @@ function printTermine(){
         document.getElementById("stundenplan-" + termin.tag).append(terminDiv);
     }
 
-}
-
-function getBgColor(fach){
-    if(data[fach] == undefined){
-        return "none";
-    }else{
-        return data[fach].bgColor;
-    }
-}
-
-function getColor(fach){
-    if(data[fach] == undefined){
-        return "none";
-    }else{
-        return data[fach].color;
-    }
-}
-
-function getIsBlocked(fach){
-    if(data[fach] == undefined){
-        return false;
-    }else{
-        return data[fach].isBlocked;
-    }
-}
-
-
-let _mapMaxValue = 17.0;
-let _mapMinValue = 8.0;
-let _mapScale = (100.0/(_mapMaxValue - _mapMinValue));
-
-function map(value){
-    let float = parseInt(value) + (parseFloat(value) % 1 * (100/60) );
-    return (float - _mapMinValue) * _mapScale;
-}
-
-getTermine(containerMo, "mo");
-getTermine(containerDi, "di");
-getTermine(containerMi, "mi");
-getTermine(containerDo, "do");
-getTermine(containerFr, "fr");
-getTermine(containerSa, "sa");
-
-(function addOldBtn(){
-    let oldBtn = document.createElement("button");
-    oldBtn.append("old");
-    oldBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-
-        let newStundenplan = document.getElementById("new-stundenplan");
-
-        if(newStundenplan.style.display === "flex"){
-            for (let index = 0; index < 6; index++) {
-                const element = tageContainer[index];
-                element.style.display = "";
-            }
-            newStundenplan.style.display = "none";
-        }else{
-            for (let index = 0; index < 6; index++) {
-                const element = tageContainer[index];
-                element.style.display = "none";
-            }
-            newStundenplan.style.display = "flex";
-        }
-        
-    });
-    stundenplanTable.insertAdjacentElement("afterbegin", oldBtn);
 })();
 
-console.log(termine);
-printTermine();
+function getTermine(container, tag){
+    container.innerText.split("\n\n").forEach((element)=>{
+        if(element === "")return;
+        let infos = element.split("\n");
+        let termin = {
+            tag:    tag,
+            time:   infos[0],
+            dozent: infos[1],
+            raum:   infos[2],
+            fach:   infos[3]
+        };
+        if(termin.raum === undefined){
+            termin.fach = termin.dozent;
+            termin.raum = termin.time;
+            termin.time = "";
+            termin.dozent = "";
+        }else if(termin.fach === undefined){
+            termin.fach = termin.raum;
+            termin.raum = termin.dozent;
+            termin.dozent = "";
+        }
+        termine.push(termin);
+    });
+    container.style.display = "none";
+}
 
 function setNewData(newData) {
     data = newData;
-    console.log(data);
 
     for (const fach of faecher) {
         let divs = document.querySelectorAll("." + fach);
@@ -207,10 +165,6 @@ function setNewData(newData) {
 
 }
 
-function handleError(error) {
-    console.log(`Error: ${error}`);
-}
-
 /**
  * MESSAGES
  */
@@ -218,7 +172,6 @@ function handleError(error) {
 browser.runtime.onMessage.addListener((msg) => {
     switch (msg.type) {
         case "all-data":
-            console.log("CHANGE", msg);
             setNewData(msg.data);
             break;
     }
