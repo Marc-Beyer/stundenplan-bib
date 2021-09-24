@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	
+<!--Latest IE Compatibility-->
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="generator" content="Tiki Wiki CMS Groupware - https://tiki.org">
+
+<meta content="https://intranet.bib.de/" name="twitter:domain"> 
+
+
+
+
+	<meta name="description" content="IntraNet - bib &amp; FHDW" property="og:description">
+	<meta name="twitter:description" content="IntraNet - bib &amp; FHDW">
+	<meta name="robots" content="NOINDEX">
+
+<meta content="IntraNet - bib &amp; FHDW" property="og:site_name">
+<meta content="IntraNet - bib &amp; FHDW" name="twitter:site">
+
+
+
+<title>IntraNet - bib &amp; FHDW | favicon.ico</title>
+
+
+<meta property="og:title" content="IntraNet - bib &amp; FHDW | favicon.ico">
+
+<meta name="twitter:title" content="IntraNet - bib &amp; FHDW | favicon.ico">
+
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+	<link rel="alternate" type="application/rss+xml" title='IntraNet b.i.b./FHDW Wiki-Seiten' href="tiki-wiki_rss.php?ver=5">
+<!--[if lt IE 9]>
+	<script src="vendor_bundled/vendor/afarkas/html5shiv/dist/html5shiv.min.js" type="text/javascript"></script>
+<![endif]-->
+		
+<link rel="stylesheet" href="temp/public/codemirror_modes.css" type="text/css">
+<link rel="stylesheet" href="themes/base_files/css/tiki_base.css" type="text/css">
+<link rel="stylesheet" href="vendor_bundled/vendor/bower-asset/fontawesome/css/all.css" type="text/css">
+<link rel="stylesheet" href="themes/default/css/default.css" type="text/css">
+<link rel="stylesheet" href="vendor_bundled/vendor/studio-42/elfinder/css/elfinder.min.css" type="text/css">
+<link rel="stylesheet" href="lib/openlayers/theme/default/style.css" type="text/css">
+<link rel="stylesheet" href="vendor_bundled/vendor/codemirror/codemirror/lib/codemirror.css" type="text/css">
+<link rel="stylesheet" href="themes/base_files/feature_css/codemirror_tiki.css" type="text/css">
+<link rel="stylesheet" href="vendor_bundled/vendor/components/jqueryui/themes/flick/jquery-ui.css" type="text/css">
+<link rel="stylesheet" href="vendor_bundled/vendor/jquery/jquery-timepicker-addon/dist/jquery-ui-timepicker-addon.css" type="text/css">
+<link rel="stylesheet" href="vendor_bundled/vendor/jquery-plugins/colorbox/example1/colorbox.css" type="text/css">
+<link rel="stylesheet" href="vendor_bundled/vendor/jquery-plugins/treetable/css/jquery.treetable.css" type="text/css">
+<link rel="stylesheet" href="themes/base_files/feature_css/svg-edit-draw.css" type="text/css">
+<style type="text/css"><!--
+/* css 0 */
+
+.img_zoom {
+	display:inline-block;
+}
+.img_zoom:after {
+	content:"";
+	display:block;
+	width:33px;
+	height:33px;
+	position:absolute;
+	top:0;
+	right:0;
+	background:url(vendor_bundled/vendor/jquery-plugins/zoom/icon.png);
+}
+.img_zoom img {
+	display:block;
+}
+
+.ui-autocomplete-loading { background: white url("img/spinner.gif") right center no-repeat; }
+/*
+=================================================
+Theme Customizer Generated CSS
+=================================================
+*/
+body{
+margin-left:1%;
+margin-right:1%;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+.h1 {
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #21376a;
+  text-transform: none;
+}
+.h2 {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #21376a;
+  text-transform: none;
+}
+.h3 {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #21376a;
+  text-transform: none;
+}
+.h4 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #21376a;
+  text-transform: none;
+}
+.h5 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #21376a;
+  text-transform: none;
+}
+.h6 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: #21376a;
+  text-transform: none;
+}
+
+
+.navbar {
+  border-radius: 4px;
+}
+.customizer .icons .sample span {
+  background-color: #337ab7;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.table > tbody > tr > td {
+  padding: 6px;
+}
+
+#col1 {
+    overflow: auto;
+}
+
+.sitelogo img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.modules > .module .sitelogo img, .sitetitles {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.titlebar {
+    font-size: 2em;
+    font-weight: 500;
+    color: #21376a;
+    border-bottom: 1px solid #21376a;
+}
+
+.module h3.card-title {
+    font-size: 1rem;
+}
+
+.tiki .col1 .table-responsive {
+	border: none;
+        .table th, .table td {
+	    border-top: none;
+   }
+}
+
+
+-->
+</style>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class=" tiki  tiki-index tiki_wiki_page layout_basic de">
+
+
+
+
+
+
+
+	<div id="ajaxLoading">Lade...</div>
+<div id="ajaxLoadingBG">&nbsp;</div>
+<div id="ajaxDebug"></div>
+
+<div class="container container-std">
+	<div class="row">
+	<header class="page-header w-100" id="page-header">
+		<nav class="content clearfix modules top_modules d-flex justify-content-between navbar-light-parent bg-light-parent" id="top_modules">
+	
+
+
+
+
+			<div id="module_2" style=""
+				 class="module box-logo">
+				<div id="mod-logotop1">
+										<div  style="background-color: transparent;" class="position-relative float-left sitelogo"><a href="./" title="IntraNet bib &amp; FHDW"><img src="/styles/IntranetHeader-FHDW-bib120x2200.png" alt="IntraNet bib &amp; FHDW" style="max-width: 100%; height: auto"></a></div>
+													
+					</div>
+</div>
+
+
+</nav>
+	</header>
+	</div>
+
+	<div class="row row-middle" id="row-middle">
+
+		<nav class="content clearfix modules topbar_modules d-flex justify-content-between topbar navbar-light bg-light w-100 mb-sm" id="topbar_modules">
+	
+</nav>
+
+							<div class="d-flex w-100 flex-row flex-wrap">
+			<div class="col col1 col-md-12 col-lg-9 pb-4" id="col1">
+								
+
+<div id="tikifeedback">
+	</div>
+
+				
+				
+	<!-- Legacy template, no support for title block -->
+
+				
+				
+	
+<div id="rbox_1" class="alert alert-danger alert-dismissable "><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><h4><span class="icon icon-error fas fa-exclamation-circle "   ></span>&nbsp;<span class="rboxtitle">Fehler</span></h4><div class="rboxcontent" style="display: inline">Seite wurde nicht gefunden<br>favicon.ico</div></div>
+
+<a class="btn btn-link " data-role="button" data-inline="true"  title="Zur√ºck" onclick="javascript:history.back();return false;" href="/tiki-index.php"><span class="icon icon-arrow-left fas fa-arrow-left "   ></span> Zur√ºck</a><br><br><a class="btn btn-link " data-role="button" data-inline="true"  title="Zur Home-Seite zur√ºckkehren"  href="/tiki-index.php?page=welcome" ><span class="icon icon-home fas fa-home "   ></span> Zur Home-Seite zur√ºckkehren</a>
+
+									<div class="content clearfix modules mt-3" id="pagebottom_modules">
+	
+</div>
+							</div>
+			<div class="col col3 col-md-12 col-lg-3" id="col3">
+				<div class="content clearfix modules" id="right_modules">
+	
+
+
+
+
+<div id="module_21"
+	class="card box-login_box module">
+			<div class="card-header" >
+							<h3 class="card-title clearfix">
+											<span class="moduletitle">A N M E L D U N G</span>
+														</h3>
+					</div>
+			<div id="mod-login_boxright2"
+			 style="display: block;"
+			 class="clearfix card-body">
+														
+		<form name="loginbox" class="form" id="loginbox-1" action="https://intranet.bib.de/tiki-login.php"
+				method="post" 
+						>
+		<input type="hidden" class="ticket" name="ticket" value="fKuiuZ2ZVuZBFI8XNE592PgC9sb0LxbFMTjxLNqIwAg" />
+		
+
+							<fieldset>
+										<div class="user form-group row mx-0 clearfix">
+						<label for="login-user_1">
+									Loginkennung / E-Mail:
+							</label>
+								<input class="form-control" type="text" name="user" id="login-user_1"  autocomplete="username"/>
+									</div>
+		<div class="pass form-group row mx-0 clearfix">
+			<label for="login-pass_1">Passwort:</label>
+			<input onkeypress="capLock(event, this)" type="password" name="pass" class="form-control" id="login-pass_1" autocomplete="current-password">
+			<div class="divCapson" style="display:none;">
+				<span class="icon icon-error fas fa-exclamation-circle " style="vertical-align:middle;"  ></span> CapsLock ist aktiviert.
+			</div>
+		</div>
+				<div class="form-group text-center">
+			<button class="btn btn-primary button submit" type="submit" name="login">Log In <!--i class="fa fa-arrow-circle-right"></i--></button>
+		</div>
+					&nbsp;
+								
+		<input type="hidden" name="stay_in_ssl_mode_present" value="y" />
+					<input type="hidden" name="stay_in_ssl_mode" value="y" />
+		
+				<div class="social-buttons">
+								</div>
+		</fieldset></form>
+				
+														</div>
+				
+								<div class="card-footer"></div> 
+			</div>
+			
+
+
+
+
+
+<div id="module_53"
+	class="card box-P+a+r+t+n+e+r+s+e+i+t+e+n module">
+			<div class="card-header" >
+							<h3 class="card-title clearfix">
+											<span class="moduletitle">P a r t n e r s e i t e n<br /></span>
+														</h3>
+					</div>
+			<div id="mod-P_a_r_t_n_e_r_s_e_i_t_e_nright4"
+			 style="display: block;"
+			 class="clearfix card-body">
+								
+<div id="P_a_r_t_n_e_r_s_e_i_t_e_n" style="display:block;">
+ <a class="wiki external" target="_blank" href="https://portal.office.com" rel="external">Office 365 Portal</a><br /></div>
+
+														</div>
+				
+								<div class="card-footer"></div> 
+			</div>
+			
+
+
+
+
+
+<div id="module_62"
+	class="card box-IT-St%C3%B6rungen module">
+			<div class="card-header" >
+							<h3 class="card-title clearfix">
+											<span class="moduletitle">I T - S t √∂ r u n g e n<br /></span>
+														</h3>
+					</div>
+			<div id="mod-IT-St%C3%B6rungenright7"
+			 style="display: block;"
+			 class="clearfix card-body">
+								
+<div id="IT-St√∂rungen" style="display:block;">
+<span style="color:green"><div style="text-align: center;"><strong></strong></div></span><br />
+<span style="color:orange"><div style="text-align: center;"><strong></strong></div></span><br />
+<span style="color:red"><div style="text-align: center;"><strong>PB: Datenserver down</strong></div></span><br />
+<br /></div>
+
+														</div>
+				
+								<div class="card-footer"></div> 
+			</div>
+			
+
+
+
+
+
+<div id="module_58"
+	class="card box-paradigm module">
+			<div class="card-header" >
+							<h3 class="card-title clearfix">
+											<span class="moduletitle">P a r a d i g m<br /></span>
+														</h3>
+					</div>
+			<div id="mod-paradigmright11"
+			 style="display: block;"
+			 class="clearfix card-body">
+								
+<div id="paradigm" style="display:block;">
+bib International College has entered into an <a href="https://www.visual-paradigm.com/partner/academic/" target="_blank">academic partnership</a> with <a href="https://www.visual-paradigm.com/" target="_blank">Visual Paradigm</a> to better facilitate the teaching of software design & modeling through the use of Visual Paradigm.<br /></div>
+
+														</div>
+				
+								<div class="card-footer"></div> 
+			</div>
+			
+
+</div>
+			</div>
+		</div>
+			</div>
+
+	<footer class="row footer main-footer" id="footer">
+		<div class="footer_liner w-100">
+			<div class="content clearfix modules bottom_modules p-3 mx-0" id="bottom_modules">
+	
+
+
+
+
+			<div id="module_39" style=""
+				 class="module box-Abspann">
+				<div id="mod-Abspannbottom1">
+										
+<div id="Abspann" style="display:block;">
+<hr />
+<div style="text-align: center;">
+	<a href="/tiki-index.php" class="internal"  target='_blank' >
+		<img src="styles/home.gif"  height="12" width="12" alt="Start" class="regImage pluginImg img-fluid" />
+
+	</a>
+ 193.22.73.205 | <a href="tiki-index.php?page=Impressum" title="Impressum" class="wiki wiki_page">Impressum</a> | <a class="wiki external" target="_blank" href="http://www.bib.de" rel="external">bib International College</a> | <a class="wiki external" target="_blank" href="http://www.fhdw.de" rel="external">Fachhochschule der Wirtschaft (FHDW-NRW)</a> | <a class="wiki external" target="_blank" href="http://www.fhdw-hannover.de" rel="external">Fachhochschule f√ºr die Wirtschaft (FHDW Hannover)</a></div><br /></div>
+
+													
+					</div>
+</div>
+
+
+</div>
+		</div>
+	</footer>
+</div>
+
+
+<div id="bootstrap-modal" class="modal fade footer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h4 class="modal-title" id="myModalLabel"></h4>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="bootstrap-modal-2" class="modal fade footer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		</div>
+	</div>
+</div>
+<div id="bootstrap-modal-3" class="modal fade footer-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		</div>
+	</div>
+</div>
+	
+	
+
+
+
+<!-- Put JS at the end -->
+	
+	
+<script type="text/javascript" src="temp/public/min_main_f19bbb0687cfe6290947dd6b6eac3e78.js"></script>
+<script type="text/javascript" src="lang/de/language.js"></script>
+<script type="text/javascript" src="lib/captcha/captchalib.js"></script>
+	
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+// js 0 
+tiki_cookie_jar=new Object();
+$.lang = 'de';
+
+// JS Object to hold prefs for jq
+var jqueryTiki = {"ui":true,"ui_theme":"flick","tooltips":true,"autocomplete":true,"superfish":true,"reflection":false,"tablesorter":true,"colorbox":true,"cboxCurrent":"{current} / {total}","sheet":true,"carousel":false,"validate":true,"zoom":true,"effect":"","effect_direction":"vertical","effect_speed":"400","effect_tabs":"slide","effect_tabs_direction":"vertical","effect_tabs_speed":"fast","home_file_gallery":"4","autosave":true,"sefurl":false,"ajax":true,"syntaxHighlighter":true,"chosen":false,"chosen_sortable":false,"mapTileSets":["google_street","google_satellite"],"infoboxTypes":["trackeritem","activity"],"googleStreetView":true,"googleStreetViewOverlay":false,"googleMapsAPIKey":"AIzaSyDaRdh4WrfSkEvGUU2Gb3LH6B5oWFV91Nk","structurePageRepeat":false,"mobile":false,"no_cookie":false,"language":"de","useInlineComment":false,"useInlineAnnotations":false,"helpurl":"http://doc.tiki.org/","shortDateFormat":"yy-mm-dd","shortTimeFormat":"HH:mm","username":null,"userRealName":null,"userAvatar":"https://intranet.bib.de/img/noavatar.png?v=1490641009","autoToc_inline":false,"autoToc_pos":"right","autoToc_offset":"10","bingMapsAPIKey":"","nextzenAPIKey":"","securityTimeout":14400,"current_object":{"type":"wiki page","object":"favicon.ico"}}
+
+jqueryTiki.iconset = {"defaults":["500px","accessible-icon","accusoft","ad","address-book","address-card","adjust","adn","adversal","affiliatetheme","air-freshener","algolia","align-center","align-justify","align-left","align-right","alipay","allergies","amazon","amazon-pay","ambulance","american-sign-language-interpreting","amilia","anchor","android","angellist","angle-double-down","angle-double-left","angle-double-right","angle-double-up","angle-down","angle-left","angle-right","angle-up","angry","angrycreative","angular","ankh","app-store","app-store-ios","apper","apple","apple-alt","apple-pay","archive","archway","arrow-alt-circle-down","arrow-alt-circle-left","arrow-alt-circle-right","arrow-alt-circle-up","arrow-circle-down","arrow-circle-left","arrow-circle-right","arrow-circle-up","arrow-down","arrow-left","arrow-right","arrow-up","arrows-alt","arrows-alt-h","arrows-alt-v","assistive-listening-systems","asterisk","asymmetrik","at","atlas","atom","audible","audio-description","autoprefixer","avianex","aviato","award","aws","backspace","backward","balance-scale","ban","band-aid","bandcamp","barcode","bars","baseball-ball","basketball-ball","bath","battery-empty","battery-full","battery-half","battery-quarter","battery-three-quarters","bed","beer","behance","behance-square","bell","bell-slash","bezier-curve","bible","bicycle","bimobject","binoculars","birthday-cake","bitbucket","bitcoin","bity","black-tie","blackberry","blender","blind","blogger","blogger-b","bluetooth","bluetooth-b","bold","bolt","bomb","bone","bong","book","book-open","book-reader","bookmark","bowling-ball","box","box-open","boxes","braille","brain","briefcase","briefcase-medical","broadcast-tower","broom","brush","btc","bug","building","bullhorn","bullseye","burn","buromobelexperte","bus","bus-alt","business-time","buysellads","calculator","calendar","calendar-alt","calendar-check","calendar-minus","calendar-plus","calendar-times","camera","camera-retro","cannabis","capsules","car","car-alt","car-battery","car-crash","car-side","caret-down","caret-left","caret-right","caret-square-down","caret-square-left","caret-square-right","caret-square-up","caret-up","cart-arrow-down","cart-plus","cc-amazon-pay","cc-amex","cc-apple-pay","cc-diners-club","cc-discover","cc-jcb","cc-mastercard","cc-paypal","cc-stripe","cc-visa","centercode","certificate","chalkboard","chalkboard-teacher","charging-station","chart-area","chart-bar","chart-line","chart-pie","check","check-circle","check-double","check-square","chess","chess-bishop","chess-board","chess-king","chess-knight","chess-pawn","chess-queen","chess-rook","chevron-circle-down","chevron-circle-left","chevron-circle-right","chevron-circle-up","chevron-down","chevron-left","chevron-right","chevron-up","child","chrome","church","circle","circle-notch","city","clipboard","clipboard-check","clipboard-list","clock","clone","closed-captioning","cloud","cloud-download-alt","cloud-upload-alt","cloudscale","cloudsmith","cloudversify","cocktail","code","code-branch","codepen","codiepie","coffee","cog","cogs","coins","columns","comment","comment-alt","comment-dollar","comment-dots","comment-slash","comments","comments-dollar","compact-disc","compass","compress","concierge-bell","connectdevelop","contao","cookie","cookie-bite","copy","copyright","couch","cpanel","creative-commons","creative-commons-by","creative-commons-nc","creative-commons-nc-eu","creative-commons-nc-jp","creative-commons-nd","creative-commons-pd","creative-commons-pd-alt","creative-commons-remix","creative-commons-sa","creative-commons-sampling","creative-commons-sampling-plus","creative-commons-share","credit-card","crop","crop-alt","cross","crosshairs","crow","crown","css3","css3-alt","cube","cubes","cut","cuttlefish","d-and-d","dashcube","database","deaf","delicious","deploydog","deskpro","desktop","deviantart","dharmachakra","diagnoses","dice","dice-five","dice-four","dice-one","dice-six","dice-three","dice-two","digg","digital-ocean","digital-tachograph","directions","discord","discourse","divide","dizzy","dna","dochub","docker","dollar-sign","dolly","dolly-flatbed","donate","door-closed","door-open","dot-circle","dove","download","draft2digital","drafting-compass","draw-polygon","dribbble","dribbble-square","dropbox","drum","drum-steelpan","drupal","dumbbell","dyalog","earlybirds","ebay","edge","edit","eject","elementor","ellipsis-h","ellipsis-v","ello","ember","empire","envelope","envelope-open","envelope-open-text","envelope-square","envira","equals","eraser","erlang","ethereum","etsy","euro-sign","exchange-alt","exclamation","exclamation-circle","exclamation-triangle","expand","expand-arrows-alt","expeditedssl","external-link-alt","external-link-square-alt","eye","eye-dropper","eye-slash","facebook","facebook-f","facebook-messenger","facebook-square","fast-backward","fast-forward","fax","feather","feather-alt","female","fighter-jet","file","file-alt","file-archive","file-audio","file-code","file-contract","file-download","file-excel","file-export","file-image","file-import","file-invoice","file-invoice-dollar","file-medical","file-medical-alt","file-pdf","file-powerpoint","file-prescription","file-signature","file-upload","file-video","file-word","fill","fill-drip","film","filter","fingerprint","fire","fire-extinguisher","firefox","first-aid","first-order","first-order-alt","firstdraft","fish","flag","flag-checkered","flask","flickr","flipboard","flushed","fly","folder","folder-minus","folder-open","folder-plus","font","font-awesome","font-awesome-alt","font-awesome-flag","fonticons","fonticons-fi","football-ball","fort-awesome","fort-awesome-alt","forumbee","forward","foursquare","free-code-camp","freebsd","frog","frown","frown-open","fulcrum","funnel-dollar","futbol","galactic-republic","galactic-senate","gamepad","gas-pump","gavel","gem","genderless","get-pocket","gg","gg-circle","ghost","gift","gifts","git","git-square","github","github-alt","github-square","gitkraken","gitlab","gitter","glass-cheers","glass-martini","glass-martini-alt","glass-whiskey","glasses","glide","glide-g","globe","globe-africa","globe-americas","globe-asia","globe-europe","gofore","golf-ball","goodreads","goodreads-g","google","google-drive","google-play","google-plus","google-plus-g","google-plus-square","google-wallet","gopuram","graduation-cap","gratipay","grav","greater-than","greater-than-equal","grimace","grin","grin-alt","grin-beam","grin-beam-sweat","grin-hearts","grin-squint","grin-squint-tears","grin-stars","grin-tears","grin-tongue","grin-tongue-squint","grin-tongue-wink","grin-wink","grip-horizontal","grip-lines","grip-lines-vertical","grip-vertical","gripfire","grunt","guitar","gulp","h-square","hacker-news","hacker-news-square","hackerrank","hammer","hamsa","hand-holding","hand-holding-heart","hand-holding-usd","hand-lizard","hand-paper","hand-peace","hand-point-down","hand-point-left","hand-point-right","hand-point-up","hand-pointer","hand-rock","hand-scissors","hand-spock","hands","hands-helping","handshake","hanukiah","hashtag","hat-wizard","haykal","hdd","heading","headphones","headphones-alt","headset","heart","heart-broken","heartbeat","helicopter","highlighter","hiking","hippo","hips","hire-a-helper","history","hockey-puck","holly-berry","home","hooli","hornbill","horse","horse-head","hospital","hospital-alt","hospital-symbol","hot-tub","hotel","hotjar","hourglass","hourglass-end","hourglass-half","hourglass-start","house-damage","houzz","hryvnia","html5","hubspot","i-cursor","id-badge","id-card","id-card-alt","image","images","imdb","inbox","indent","industry","infinity","info","info-circle","instagram","internet-explorer","ioxhost","italic","itunes","itunes-note","java","jedi","jedi-order","jenkins","joget","joint","joomla","journal-whills","js","js-square","jsfiddle","kaaba","kaggle","key","keybase","keyboard","keycdn","khanda","kickstarter","kickstarter-k","kiss","kiss-beam","kiss-wink-heart","kiwi-bird","korvue","landmark","language","laptop","laptop-code","laravel","lastfm","lastfm-square","laugh","laugh-beam","laugh-squint","laugh-wink","layer-group","leaf","leanpub","lemon","less","less-than","less-than-equal","level-down-alt","level-up-alt","life-ring","lightbulb","line","link","linkedin","linkedin-in","linode","linux","lira-sign","list","list-alt","list-ol","list-ul","location-arrow","lock","lock-open","long-arrow-alt-down","long-arrow-alt-left","long-arrow-alt-right","long-arrow-alt-up","low-vision","luggage-cart","lyft","magento","magic","magnet","mail-bulk","mailchimp","male","mandalorian","map","map-marked","map-marked-alt","map-marker","map-marker-alt","map-pin","map-signs","markdown","marker","mars","mars-double","mars-stroke","mars-stroke-h","mars-stroke-v","mastodon","maxcdn","medal","medapps","medium","medium-m","medkit","medrt","meetup","megaport","meh","meh-blank","meh-rolling-eyes","memory","menorah","mercury","microchip","microphone","microphone-alt","microphone-alt-slash","microphone-slash","microscope","microsoft","minus","minus-circle","minus-square","mix","mixcloud","mizuni","mobile","mobile-alt","modx","monero","money-bill","money-bill-alt","money-bill-wave","money-bill-wave-alt","money-check","money-check-alt","monument","moon","mortar-pestle","mosque","motorcycle","mouse-pointer","music","napster","neos","neuter","newspaper","nimblr","nintendo-switch","node","node-js","not-equal","notes-medical","npm","ns8","nutritionix","object-group","object-ungroup","odnoklassniki","odnoklassniki-square","oil-can","old-republic","om","opencart","openid","opera","optin-monster","osi","outdent","page4","pagelines","paint-brush","paint-roller","palette","palfed","pallet","paper-plane","paperclip","parachute-box","paragraph","parking","passport","pastafarianism","paste","patreon","pause","pause-circle","paw","paypal","peace","pen","pen-alt","pen-fancy","pen-nib","pen-square","pencil-alt","pencil-ruler","people-carry","percent","percentage","periscope","phabricator","phoenix-framework","phoenix-squadron","phone","phone-slash","phone-square","phone-volume","php","pied-piper","pied-piper-alt","pied-piper-hat","pied-piper-pp","piggy-bank","pills","pinterest","pinterest-p","pinterest-square","place-of-worship","plane","plane-arrival","plane-departure","play","play-circle","playstation","plug","plus","plus-circle","plus-square","podcast","poll","poll-h","poo","poop","portrait","pound-sign","power-off","pray","praying-hands","prescription","prescription-bottle","prescription-bottle-alt","print","procedures","product-hunt","project-diagram","pushed","puzzle-piece","python","qq","qrcode","question","question-circle","quidditch","quinscape","quora","quote-left","quote-right","quran","r-project","radiation","radiation-alt","rainbow","random","raspberry-pi","ravelry","react","reacteurope","readme","rebel","receipt","recycle","red-river","reddit","reddit-alien","reddit-square","redhat","redo","redo-alt","registered","renren","reply","reply-all","replyd","republican","researchgate","resolving","restroom","retweet","rev","ribbon","ring","road","robot","rocket","rocketchat","rockrms","route","rss","rss-square","ruble-sign","ruler","ruler-combined","ruler-horizontal","ruler-vertical","running","rupee-sign","sad-cry","sad-tear","safari","sass","save","schlix","school","screwdriver","scribd","search","search-dollar","search-location","search-minus","search-plus","searchengin","seedling","sellcast","sellsy","server","servicestack","shapes","share","share-alt","share-alt-square","share-square","shekel-sign","shield-alt","ship","shipping-fast","shirtsinbulk","shoe-prints","shopping-bag","shopping-basket","shopping-cart","shopware","shower","shuttle-van","sign","sign-in-alt","sign-language","sign-out-alt","signal","signature","simplybuilt","sistrix","sitemap","sith","skull","skyatlas","skype","slack","slack-hash","sliders-h","slideshare","smile","smile-beam","smile-wink","smoking","smoking-ban","snapchat","snapchat-ghost","snapchat-square","snowflake","socks","solar-panel","sort","sort-alpha-down","sort-alpha-up","sort-amount-down","sort-amount-up","sort-down","sort-numeric-down","sort-numeric-up","sort-up","soundcloud","spa","space-shuttle","speakap","spinner","splotch","spotify","spray-can","square","square-full","square-root-alt","squarespace","stack-exchange","stack-overflow","stamp","star","star-and-crescent","star-half","star-half-alt","star-of-david","star-of-life","staylinked","steam","steam-square","steam-symbol","step-backward","step-forward","stethoscope","sticker-mule","sticky-note","stop","stop-circle","stopwatch","store","store-alt","strava","stream","street-view","strikethrough","stripe","stripe-s","stroopwafel","studiovinari","stumbleupon","stumbleupon-circle","subscript","subway","suitcase","suitcase-rolling","sun","superpowers","superscript","supple","surprise","swatchbook","swimmer","swimming-pool","synagogue","sync","sync-alt","syringe","table","table-tennis","tablet","tablet-alt","tablets","tachometer-alt","tag","tags","tape","tasks","taxi","teamspeak","teeth","teeth-open","telegram","telegram-plane","tencent-weibo","terminal","text-height","text-width","th","th-large","th-list","the-red-yeti","theater-masks","themeco","themeisle","thermometer","thermometer-empty","thermometer-full","thermometer-half","thermometer-quarter","thermometer-three-quarters","thumbs-down","thumbs-up","thumbtack","ticket-alt","times","times-circle","tint","tint-slash","tired","toggle-off","toggle-on","toolbox","tooth","torah","torii-gate","trade-federation","trademark","traffic-light","train","transgender","transgender-alt","trash","trash-alt","tree","trello","tripadvisor","trophy","truck","truck-loading","truck-monster","truck-moving","truck-pickup","tshirt","tty","tumblr","tumblr-square","tv","twitch","twitter","twitter-square","typo3","uber","uikit","umbrella","umbrella-beach","underline","undo","undo-alt","uniregistry","universal-access","university","unlink","unlock","unlock-alt","untappd","upload","usb","user","user-alt","user-alt-slash","user-astronaut","user-check","user-circle","user-clock","user-cog","user-edit","user-friends","user-graduate","user-lock","user-md","user-minus","user-ninja","user-plus","user-secret","user-shield","user-slash","user-tag","user-tie","user-times","users","users-cog","ussunnah","utensil-spoon","utensils","vaadin","vector-square","venus","venus-double","venus-mars","viacoin","viadeo","viadeo-square","vial","vials","viber","video","video-slash","vihara","vimeo","vimeo-square","vimeo-v","vine","vk","vnv","volleyball-ball","volume-down","volume-mute","volume-off","volume-up","vote-yea","vr-cardboard","vuejs","walking","wallet","warehouse","water","weebly","weibo","weight","weight-hanging","weixin","whatsapp","whatsapp-square","wheelchair","whmcs","wifi","wikipedia-w","wind","window-close","window-maximize","window-minimize","window-restore","windows","wine-bottle","wine-glass","wine-glass-alt","wix","wizards-of-the-coast","wolf-pack-battalion","won-sign","wordpress","wordpress-simple","wpbeginner","wpexplorer","wpforms","wpressr","wrench","x-ray","xbox","xing","xing-square","y-combinator","yahoo","yandex","yandex-international","yelp","yen-sign","yin-yang","yoast","youtube","youtube-square","zhihu"],"icons":{"actions":{"id":"play-circle"},"admin":{"id":"cog"},"add":{"id":"plus-circle"},"admin_ads":{"id":"film"},"admin_articles":{"id":"newspaper","prepend":"far fa-"},"admin_blogs":{"id":"bold"},"admin_calendar":{"id":"calendar-alt","prepend":"far fa-"},"admin_category":{"id":"sitemap fa-rotate-270"},"admin_comments":{"id":"comment"},"admin_community":{"id":"users"},"admin_connect":{"id":"link"},"admin_copyright":{"id":"copyright","prepend":"far fa-"},"admin_directory":{"id":"folder","prepend":"far fa-"},"admin_faqs":{"id":"question"},"admin_features":{"id":"power-off"},"admin_fgal":{"id":"folder-open"},"admin_forums":{"id":"comments"},"admin_freetags":{"id":"tags"},"admin_gal":{"id":"file-image","prepend":"far fa-"},"admin_general":{"id":"cog"},"admin_i18n":{"id":"language"},"admin_intertiki":{"id":"exchange-alt"},"admin_login":{"id":"sign-in-alt"},"admin_user":{"id":"user"},"admin_look":{"id":"image","prepend":"far fa-"},"admin_maps":{"id":"map-marker-alt"},"admin_messages":{"id":"envelope","prepend":"far fa-"},"admin_metatags":{"id":"tag"},"admin_module":{"id":"shapes"},"admin_payment":{"id":"credit-card","prepend":"far fa-"},"admin_performance":{"id":"tachometer-alt"},"admin_polls":{"id":"tasks"},"admin_profiles":{"id":"cube"},"admin_rating":{"id":"check-square"},"admin_rss":{"id":"rss"},"admin_score":{"id":"trophy"},"admin_search":{"id":"search"},"admin_semantic":{"id":"arrows-alt-h"},"admin_security":{"id":"lock"},"admin_sefurl":{"id":"search-plus"},"admin_share":{"id":"share-alt"},"admin_socialnetworks":{"id":"thumbs-up"},"admin_stats":{"id":"chart-bar","prepend":"far fa-"},"admin_textarea":{"id":"edit"},"admin_trackers":{"id":"database"},"admin_userfiles":{"id":"cog"},"admin_video":{"id":"video"},"admin_webmail":{"id":"inbox"},"admin_webservices":{"id":"cog"},"admin_wiki":{"id":"file-alt","prepend":"far fa-"},"admin_workspace":{"id":"desktop"},"admin_wysiwyg":{"id":"file-alt"},"admin_print":{"id":"print"},"admin_packages":{"id":"gift"},"admin_rtc":{"id":"bullhorn"},"adn":{"id":"adn","prepend":"fab fa-"},"amazon":{"id":"amazon","prepend":"fab fa-"},"android":{"id":"android","prepend":"fab fa-"},"angellist":{"id":"angellist","prepend":"fab fa-"},"apple":{"id":"apple","prepend":"fab fa-"},"area-chart":{"id":"chart-area"},"arrows":{"id":"arrows-alt"},"arrows-h":{"id":"arrows-alt-h"},"arrows-v":{"id":"arrows-alt-v"},"articles":{"id":"newspaper","prepend":"far fa-"},"attach":{"id":"paperclip"},"audio":{"id":"file-audio","prepend":"far fa-"},"back":{"id":"arrow-left"},"background-color":{"id":"paint-brush"},"backlink":{"id":"reply"},"backward_step":{"id":"step-backward"},"bar-chart":{"id":"chart-bar"},"behance":{"id":"behance","prepend":"fab fa-"},"behance-square":{"id":"behance-square","prepend":"fab fa-"},"bitbucket":{"id":"bitbucket","prepend":"fab fa-"},"black-tie":{"id":"black-tie","prepend":"fab fa-"},"bluetooth":{"id":"bluetooth","prepend":"fab fa-"},"bluetooth-b":{"id":"bluetooth-b","prepend":"fab fa-"},"box":{"id":"list-alt","prepend":"far fa-"},"btc":{"id":"btc","prepend":"fab fa-"},"buysellads":{"id":"buysellads","prepend":"fab fa-"},"cart":{"id":"shopping-cart"},"chart":{"id":"chart-area"},"cc-amex":{"id":"cc-amex","prepend":"fab fa-"},"cc-diners-club":{"id":"cc-diners-club","prepend":"fab fa-"},"cc-discover":{"id":"cc-discover","prepend":"fab fa-"},"cc-jcb":{"id":"cc-jcb","prepend":"fab fa-"},"cc-mastercard":{"id":"cc-mastercard","prepend":"fab fa-"},"cc-paypal":{"id":"cc-paypal","prepend":"fab fa-"},"cc-stripe":{"id":"cc-stripe","prepend":"fab fa-"},"cc-visa":{"id":"cc-visa","prepend":"fab fa-"},"chrome":{"id":"chrome","prepend":"fab fa-"},"close":{"id":"times"},"cloud-download":{"id":"cloud-download-alt"},"cloud-upload":{"id":"cloud-upload-alt"},"code_file":{"id":"file-code","prepend":"far fa-"},"code-fork":{"id":"code-branch"},"codepen":{"id":"codepen","prepend":"fab fa-"},"codiepie":{"id":"codiepie","prepend":"fab fa-"},"collapsed":{"id":"plus-square","prepend":"far fa-"},"comments":{"id":"comments","prepend":"far fa-"},"compose":{"id":"pencil-alt"},"computer":{"id":"desktop"},"contacts":{"id":"users"},"content-template":{"id":"file","prepend":"far fa-"},"create":{"id":"plus"},"creative-commons":{"id":"creative-commons","prepend":"fab fa-"},"css3":{"id":"css3","prepend":"fab fa-"},"dashboard":{"id":"tachometer-alt"},"dashcube":{"id":"dashcube","prepend":"fab fa-"},"delete":{"id":"times"},"delicious":{"id":"delicious","prepend":"fab fa-"},"deviantart":{"id":"deviantart","prepend":"fab fa-"},"difference":{"id":"strikethrough"},"disable":{"id":"minus-square"},"documentation":{"id":"book"},"down":{"id":"sort-down"},"dribbble":{"id":"dribbble","prepend":"fab fa-"},"dropbox":{"id":"dropbox","prepend":"fab fa-"},"drupal":{"id":"drupal","prepend":"fab fa-"},"edge":{"id":"edge","prepend":"fab fa-"},"education":{"id":"graduation-cap"},"empire":{"id":"empire","prepend":"fab fa-"},"envelope":{"id":"envelope","prepend":"far fa-"},"envira":{"id":"envira","prepend":"fab fa-"},"erase":{"id":"eraser"},"error":{"id":"exclamation-circle"},"excel":{"id":"file-excel","prepend":"far fa-"},"exchange":{"id":"exchange-alt"},"expanded":{"id":"minus-square","prepend":"far fa-"},"expeditedssl":{"id":"expeditedssl","prepend":"fab fa-"},"export":{"id":"download"},"facebook":{"id":"facebook","prepend":"fab fa-"},"facebook-f":{"id":"facebook-f","prepend":"fab fa-"},"file":{"id":"file","prepend":"far fa-"},"file-archive":{"id":"folder"},"file-archive-open":{"id":"folder-open"},"file-text":{"id":"file-alt"},"file-text-o":{"id":"file-alt","prepend":"far fa-"},"firefox":{"id":"firefox","prepend":"fab fa-"},"first-order":{"id":"first-order","prepend":"fab fa-"},"flickr":{"id":"flickr","prepend":"fab fa-"},"floppy":{"id":"save","prepend":"far fa-"},"font-awesome":{"id":"font-awesome","prepend":"fab fa-"},"font-color":{"id":"font","class":"text-danger"},"fonticons":{"id":"fonticons","prepend":"fab fa-"},"fort-awesome":{"id":"fort-awesome","prepend":"fab fa-"},"forumbee":{"id":"forumbee","prepend":"fab fa-"},"forward_step":{"id":"step-forward"},"foursquare":{"id":"foursquare","prepend":"fab fa-"},"fullscreen":{"id":"expand-arrows-alt"},"get-pocket":{"id":"get-pocket","prepend":"fab fa-"},"gg":{"id":"gg","prepend":"fab fa-"},"gg-circle":{"id":"gg-circle","prepend":"fab fa-"},"git":{"id":"git","prepend":"fab fa-"},"git-square":{"id":"git-square","prepend":"fab fa-"},"github":{"id":"github","prepend":"fab fa-"},"github-alt":{"id":"github-alt","prepend":"fab fa-"},"github-square":{"id":"github-square","prepend":"fab fa-"},"gitlab":{"id":"gitlab","prepend":"fab fa-"},"glide":{"id":"glide","prepend":"fab fa-"},"glide-g":{"id":"glide-g","prepend":"fab fa-"},"google":{"id":"google","prepend":"fab fa-"},"google-plus":{"id":"google-plus","prepend":"fab fa-"},"google-plus-g":{"id":"google-plus-g","prepend":"fab fa-"},"google-plus-square":{"id":"google-plus-square","prepend":"fab fa-"},"group":{"id":"users"},"h1":{"id":"heading"},"h2":{"id":"heading","size":".9"},"h3":{"id":"heading","size":".8"},"hacker-news":{"id":"hacker-news","prepend":"fab fa-"},"help":{"id":"question-circle"},"history":{"id":"clock","prepend":"far fa-"},"horizontal-rule":{"id":"minus"},"houzz":{"id":"houzz","prepend":"fab fa-"},"html":{"id":"html5","prepend":"fab fa-"},"image":{"id":"file-image","prepend":"far fa-"},"import":{"id":"upload"},"index":{"id":"spinner"},"information":{"id":"info-circle"},"instagram":{"id":"instagram","prepend":"fab fa-"},"internet-explorer":{"id":"internet-explorer","prepend":"fab fa-"},"ioxhost":{"id":"ioxhost","prepend":"fab fa-"},"java":{"id":"java","prepend":"fab fa-"},"joomla":{"id":"joomla","prepend":"fab fa-"},"js":{"id":"js","prepend":"fab fa-"},"jsfiddle":{"id":"jsfiddle","prepend":"fab fa-"},"keyboard":{"id":"keyboard","prepend":"far fa-"},"lastfm":{"id":"lastfm","prepend":"fab fa-"},"lastfm-square":{"id":"lastfm-square","prepend":"fab fa-"},"leanpub":{"id":"leanpub","prepend":"fab fa-"},"less":{"id":"less","prepend":"fab fa-"},"level-down":{"id":"level-down-alt"},"level-up":{"id":"level-up-alt"},"like":{"id":"thumbs-up"},"line-chart":{"id":"chart-line"},"link-external":{"id":"external-link-alt"},"link-external-alt":{"id":"external-link-square-alt"},"linkedin":{"id":"linkedin","prepend":"fab fa-"},"linkedin-in":{"id":"linkedin-in","prepend":"fab fa-"},"linux":{"id":"linux","prepend":"fab fa-"},"list-numbered":{"id":"list-ol"},"listgui_display":{"id":"desktop"},"listgui_filter":{"id":"filter"},"listgui_format":{"id":"indent"},"listgui_pagination":{"id":"book"},"listgui_output":{"id":"eye","prepend":"far fa-"},"listgui_column":{"id":"columns"},"listgui_tablesorter":{"id":"table"},"listgui_icon":{"id":"user"},"listgui_body":{"id":"align-justify"},"listgui_carousel":{"id":"slideshare","prepend":"fab fa-"},"listgui_sort":{"id":"sort-alpha-up"},"listgui_wikitext":{"id":"file-alt","prepend":"far fa-"},"listgui_caption":{"id":"align-center"},"log":{"id":"history"},"login":{"id":"sign-in-alt"},"logout":{"id":"sign-out-alt"},"long-arrow-down":{"id":"long-arrow-alt-down"},"long-arrow-left":{"id":"long-arrow-alt-left"},"long-arrow-right":{"id":"long-arrow-alt-right"},"long-arrow-up":{"id":"long-arrow-alt-up"},"mailbox":{"id":"inbox"},"magnifier":{"id":"search"},"maxcdn":{"id":"maxcdn","prepend":"fab fa-"},"medium":{"id":"medium","prepend":"fab fa-"},"menu":{"id":"bars"},"menu-extra":{"id":"chevron-down"},"menuitem":{"id":"angle-right"},"merge":{"id":"random"},"microsoft":{"id":"microsoft","prepend":"fab fa-"},"minimize":{"id":"compress"},"mixcloud":{"id":"mixcloud","prepend":"fab fa-"},"module":{"id":"square"},"modules":{"id":"shapes"},"modx":{"id":"modx","prepend":"fab fa-"},"money":{"id":"money-bill"},"more":{"id":"ellipsis-h"},"move":{"id":"exchange-alt"},"next":{"id":"arrow-right"},"notepad":{"id":"file-alt","prepend":"far fa-"},"notification":{"id":"bell","prepend":"far fa-"},"off":{"id":"power-off"},"ok":{"id":"check-circle"},"opencart":{"id":"opencart","prepend":"fab fa-"},"openid":{"id":"openid","prepend":"fab fa-"},"opera":{"id":"opera","prepend":"fab fa-"},"optin-monster":{"id":"optin-monster","prepend":"fab fa-"},"page-break":{"id":"cut"},"pagelines":{"id":"pagelines","prepend":"fab fa-"},"paypal":{"id":"paypal","prepend":"fab fa-"},"pdf":{"id":"file-pdf","prepend":"far fa-"},"pencil":{"id":"pencil-alt"},"permission":{"id":"key"},"pie-chart":{"id":"chart-pie"},"pied-piper":{"id":"pied-piper","prepend":"fab fa-"},"pied-piper-alt":{"id":"pied-piper-alt","prepend":"fab fa-"},"pied-piper-pp":{"id":"pied-piper-pp","prepend":"fab fa-"},"pinterest":{"id":"pinterest","prepend":"fab fa-"},"pinterest-p":{"id":"pinterest-p","prepend":"fab fa-"},"pinterest-square":{"id":"pinterest-square","prepend":"fab fa-"},"plugin":{"id":"puzzle-piece"},"popup":{"id":"list-alt","prepend":"far fa-"},"post":{"id":"pencil-alt"},"powerpoint":{"id":"file-powerpoint","prepend":"far fa-"},"previous":{"id":"arrow-left"},"qq":{"id":"qq","prepend":"fab fa-"},"quotes":{"id":"quote-left"},"ranking":{"id":"sort-numeric-down"},"reddit":{"id":"reddit","prepend":"fab fa-"},"reddit-alien":{"id":"reddit-alien","prepend":"fab fa-"},"reddit-square":{"id":"reddit-square","prepend":"fab fa-"},"refresh":{"id":"sync"},"remove":{"id":"times"},"renren":{"id":"renren","prepend":"fab fa-"},"repeat":{"id":"redo"},"safari":{"id":"safari","prepend":"fab fa-"},"sass":{"id":"sass","prepend":"fab fa-"},"scissors":{"id":"cut"},"scribd":{"id":"scribd","prepend":"fab fa-"},"screencapture":{"id":"camera"},"selectall":{"id":"file-alt"},"send":{"id":"paper-plane"},"settings":{"id":"wrench"},"sharethis":{"id":"share-alt"},"shorten":{"id":"crop"},"simplybuilt":{"id":"simplybuilt","prepend":"fab fa-"},"skyatlas":{"id":"skyatlas","prepend":"fab fa-"},"skype":{"id":"skype","prepend":"fab fa-"},"slack":{"id":"slack","prepend":"fab fa-"},"smile":{"id":"smile","prepend":"far fa-"},"snapchat":{"id":"snapchat","prepend":"fab fa-"},"snapchat-ghost":{"id":"snapchat-ghost","prepend":"fab fa-"},"snapchat-square":{"id":"snapchat-square","prepend":"fab fa-"},"sort-asc":{"id":"sort-up"},"sort-alpha-asc":{"id":"sort-alpha-up"},"sort-alpha-desc":{"id":"sort-alpha-down"},"sort-amount-asc":{"id":"sort-amount-up"},"sort-amount-desc":{"id":"sort-amount-down"},"sort-desc":{"id":"sort-down"},"sort-down":{"id":"sort-down"},"sort-numeric-asc":{"id":"sort-numeric-up"},"sort-numeric-desc":{"id":"sort-numeric-down"},"sort-up":{"id":"sort-up"},"soundcloud":{"id":"soundcloud","prepend":"fab fa-"},"spotify":{"id":"spotify","prepend":"fab fa-"},"stack-exchange":{"id":"stack-exchange","prepend":"fab fa-"},"stack-overflow":{"id":"stack-overflow","prepend":"fab fa-"},"star-empty":{"id":"star","prepend":"far fa-"},"star-empty-selected":{"id":"star","prepend":"far fa-","class":"text-success"},"star-half-rating":{"id":"star-half","prepend":"far fa-"},"star-half-selected":{"id":"star-half","prepend":"far fa-","class":"text-success"},"star-selected":{"id":"star","class":"text-success"},"status-open":{"id":"circle","style":"color:green"},"status-pending":{"id":"adjust","style":"color:orange"},"status-closed":{"id":"times-circle","prepend":"far fa-","style":"color:grey"},"steam":{"id":"steam","prepend":"fab fa-"},"steam-square":{"id":"steam-square","prepend":"fab fa-"},"stop-watching":{"id":"eye-slash","prepend":"far fa-"},"structure":{"id":"sitemap"},"stumbleupon":{"id":"stumbleupon","prepend":"fab fa-"},"success":{"id":"check"},"textfile":{"id":"file-alt","prepend":"far fa-"},"themeisle":{"id":"themeisle","prepend":"fab fa-"},"three-d":{"id":"cube"},"ticket":{"id":"ticket-alt"},"time":{"id":"clock","prepend":"far fa-"},"title":{"id":"text-width"},"toggle-left":{"id":"caret-square-left","prepend":"far fa-"},"toggle-off":{"id":"toggle-off"},"toggle-on":{"id":"toggle-on"},"toggle-right":{"id":"caret-square-right","prepend":"far fa-"},"trackers":{"id":"database"},"translate":{"id":"language"},"trash":{"id":"trash-alt","prepend":"far fa-"},"trello":{"id":"trello","prepend":"fab fa-"},"tripadvisor":{"id":"tripadvisor","prepend":"fab fa-"},"tumblr":{"id":"tumblr","prepend":"fab fa-"},"tumblr-square":{"id":"tumblr-square","prepend":"fab fa-"},"twitch":{"id":"twitch","prepend":"fab fa-"},"twitter":{"id":"twitter","prepend":"fab fa-"},"twitter-square":{"id":"twitter-square","prepend":"fab fa-"},"unlike":{"id":"thumbs-down"},"up":{"id":"sort-up"},"usb":{"id":"usb","prepend":"fab fa-"},"viacoin":{"id":"viacoin","prepend":"fab fa-"},"video":{"id":"file-video","prepend":"far fa-"},"video_file":{"id":"file-video","prepend":"far fa-"},"view":{"id":"search-plus"},"vimeo":{"id":"vimeo-square","prepend":"fab fa-"},"vine":{"id":"vine","prepend":"fab fa-"},"vk":{"id":"vk","prepend":"fab fa-"},"warning":{"id":"exclamation-triangle"},"watch":{"id":"eye","prepend":"far fa-"},"watch-group":{"id":"users"},"weibo":{"id":"weibo","prepend":"fab fa-"},"whatsapp":{"id":"whatsapp","prepend":"fab fa-"},"windows":{"id":"windows","prepend":"fab fa-"},"wiki":{"id":"file-alt","prepend":"far fa-"},"wizard":{"id":"magic"},"word":{"id":"file-word","prepend":"far fa-"},"wysiwyg":{"id":"file-alt"},"xbox":{"id":"xbox","prepend":"fab fa-"},"xing":{"id":"xing","prepend":"fab fa-"},"xing-square":{"id":"xing-square","prepend":"fab fa-"},"yahoo":{"id":"yahoo","prepend":"fab fa-"},"youtube":{"id":"youtube","prepend":"fab fa-"},"youtube-square":{"id":"youtube-square","prepend":"fab fa-"},"zip":{"id":"file-archive","prepend":"far fa-"}},"tag":"span","prepend":"fas fa-","append":" fa-fw","rotate":{"90":" fa-rotate-90","180":" fa-rotate-180","270":" fa-rotate-270","horizontal":" fa-flip-horizontal","vertical":" fa-flip-vertical"}}
+var zoomToFoundLocation = "street";
+
+var bootstrapButton;
+if (typeof $.fn.button.noConflict === "function") {
+	bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+	$.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
+}
+
+$.service = function (controller, action, query) {
+		if (! query) {
+			query = {};
+		}
+		query.controller = controller;
+
+		if (action) {
+			query.action = action;
+		}
+
+		return "tiki-ajax_services.php?" + $.buildParams(query);
+	};
+function capLock(e, el){
+	kc = e.keyCode ? e.keyCode : e.which;
+	sk = e.shiftKey ? e.shiftKey : (kc == 16 ? true : false);
+	if ((kc >= 65 && kc <= 90 && !sk) || (kc >= 97 && kc <= 122 && sk)) {
+		$('.divCapson', $(el).parents('div:first')).show();
+	} else {
+		$('.divCapson', $(el).parents('div:first')).hide();
+	}
+}
+
+// js 2 
+
+try {
+	var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+	setCookie("local_tz", timezone);
+} catch (e) {}
+
+// this is used by tiki-confirm.js checkTimeout, so needs to be always set
+var now = new Date();
+
+if (! timezone) {
+	function inArray(item, array) {
+		for (var i in array) {
+			if (array[i] === item) {
+				return i;
+			}
+		}
+		return false;
+	}
+	var allTimeZoneCodes = ["ACDT","ACST","ADDT","ADT","AEDT","AEST","AHDT","AHST","AKDT","AKST","AMT","APT","AST","AWDT","AWST","AWT","BDST","BDT","BMT","BST","CAST","CAT","CDDT","CDT","CEMT","CEST","CET","CMT","CPT","CST","CWT","CHST","DMT","EAT","EDDT","EDT","EEST","EET","EMT","EPT","EST","EWT","FFMT","FMT","GDT","GMT","GST","HDT","HKST","HKT","HMT","HPT","HST","HWT","IDDT","IDT","IMT","IST","JDT","JMT","JST","KDT","KMT","KST","LST","MDDT","MDST","MDT","MEST","MET","MMT","MPT","MSD","MSK","MST","MWT","NDDT","NDT","NPT","NST","NWT","NZDT","NZMT","NZST","PDDT","PDT","PKST","PKT","PLMT","PMT","PPMT","PPT","PST","PWT","QMT","RMT","SAST","SDMT","SJMT","SMT","SST","TBMT","TMT","UCT","UTC","WAST","WAT","WEMT","WEST","WET","WIB","WITA","WIT","WMT","YDDT","YDT","YPT","YST","YWT","A","B","C","D","E","F","G","H","I","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+	var now_string = now.toString();
+	var offsethours = - now.getTimezoneOffset() / 60;
+	setCookie("local_tzoffset", offsethours);
+	var m = now_string.match(/[ \(]([A-Z]{3,6})[ \)]?[ \d]*$/);	// try three or more char tz first at the end or just before the year
+	if (!m) {
+		m = now_string.match(/[ \(]([A-Z]{1,6})[ \)]?[ \d]*$/);	// might be a "military" one if not
+	}
+	if (m) {
+		m = m[1];
+	} else {	// IE (sometimes) gives UTC +offset instead of the abbreviation
+		// sadly this workaround will fail for non-whole hour offsets
+		var hours = - now.getTimezoneOffset() / 60;
+		m = "GMT" + (hours > 0 ? "+" : "") + hours;
+	}
+	// Etc/GMT+ is equivalent to GMT-
+	if (m.substring(0,4) == "GMT+") {
+		m = "Etc/GMT-" + m.substring(4);
+		setCookie("local_tz", m);
+	}
+	if (m.substring(0,4) == "GMT-") {
+		m = "Etc/GMT+" + m.substring(4);
+		setCookie("local_tz", m);
+	}
+	if (inArray(m, allTimeZoneCodes)) {
+		setCookie("local_tz", m);
+	}
+}
+
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$(document).ready(function(){
+// jq_onready 0 
+$("#loginbox-1").submit( function () {
+	if ($("#login-user_1").val() && $("#login-pass_1").val()) {
+		return true;
+	} else {
+		$("#login-user_1").focus();
+		return false;
+	}
+});
+if (jqueryTiki.no_cookie) {
+	$('.box-login_box input').each(function(){
+		$(this).change(function() {
+			if (jqueryTiki.no_cookie && $(this).val()) {
+				alert(jqueryTiki.cookie_consent_alert);
+			}
+		});
+	});
+}
+
+if ($('#login-user_1:visible').length) {if ($("#login-user_1").offset().top < $(window).height()) {$('#login-user_1')[0].focus();} }
+});
+//--><!]]>
+</script>
+
+	
+		
+</body>
+</html>
+µ^ﬁ4      aMaMCth£       H    O^partitionKey=%28https%2Cbib.de%29,:https://intranet.bib.de/favicon.ico strongly-framed 0 security-info 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 request-method GET response-head HTTP/1.0 404 Not Found
+Date: Fri, 24 Sep 2021 00:05:21 GMT
+Server: Apache/2.4.43 (Linux/SUSE)
+X-Powered-By: PHP/7.4.6
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Accept-Ranges: bytes
+Content-Type: text/html; charset=utf-8
+ original-response-headers Date: Fri, 24 Sep 2021 00:05:21 GMT
+Server: Apache/2.4.43 (Linux/SUSE)
+X-Powered-By: PHP/7.4.6
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Set-Cookie: javascript_enabled_detect=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0
+Accept-Ranges: bytes
+Connection: close
+Content-Type: text/html; charset=utf-8
+ ctid 1 uncompressed-len 0 net-response-time-onstart 196 net-response-time-onstop 232 necko:classified 1   ¿

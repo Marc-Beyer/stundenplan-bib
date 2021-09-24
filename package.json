@@ -5,7 +5,8 @@
   "main": "web-ext.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:firefox": "web-ext run --source-dir ./src/",
+    "start": "web-ext run --firefox-profile='./firefox-profile' --browser-console --source-dir ./src/",
+    "start:keep-changes": "web-ext run --keep-profile-changes --firefox-profile='./firefox-profile' --browser-console --source-dir ./src/",
     "start:firefox-android": "web-ext run --target=firefox-android --source-dir ./src/",
     "build": "web-ext build --source-dir ./src/"
   },
