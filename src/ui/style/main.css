@@ -23,13 +23,13 @@ body #add-panel {
   margin-top: 50px;
 }
 
-body #standard-color-pannel {
+body #standard-color-panel {
   position: absolute;
   top: 105px;
   left: 300px;
 }
 
-body #standard-color-pannel input[type=color] {
+body #standard-color-panel input[type=color] {
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -38,21 +38,21 @@ body #standard-color-pannel input[type=color] {
   -webkit-appearance: none;
 }
 
-body #standard-color-pannel input[type=color]::-webkit-color-swatch-wrapper {
+body #standard-color-panel input[type=color]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-body #standard-color-pannel input[type=color]::-webkit-color-swatch {
+body #standard-color-panel input[type=color]::-webkit-color-swatch {
   border: none;
   border-radius: 50%;
 }
 
-body #standard-color-pannel table {
+body #standard-color-panel table {
   border-collapse: collapse;
   margin-top: 10px;
 }
 
-body #standard-color-pannel td {
+body #standard-color-panel td {
   padding-right: 10px;
 }
 
@@ -60,16 +60,16 @@ body h2 {
   margin-top: 60px;
 }
 
-body #upload-download-pannel {
+body #upload-download-panel {
   margin-top: 20px;
 }
 
-body #upload-download-pannel #download-btn {
+body #upload-download-panel #download-btn {
   width: 100px;
   height: 20px;
 }
 
-body #upload-download-pannel #upload-btn {
+body #upload-download-panel #upload-btn {
   width: 100px;
   height: 20px;
 }
