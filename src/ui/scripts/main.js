@@ -9,14 +9,14 @@ let data = {};
 // Send a message to get all date from backend
 sendMsg(createGetDataMsg());
 
-function changestandardColor() {
+function changeStandardColor() {
     sendMsg(
         createChangeValuesDataMsg(standardBgColor.value, standardColor.value)
     );
 }
 
-standardBgColor.addEventListener("change", changestandardColor);
-standardColor.addEventListener("change", changestandardColor);
+standardBgColor.addEventListener("change", changeStandardColor);
+standardColor.addEventListener("change", changeStandardColor);
 
 addBtn.addEventListener("click", (e) => {
     sendMsg(createGetDataMsg(addInput.value));
@@ -54,7 +54,7 @@ function appendWithTd(tableRow, element) {
 function addFachToDOM(element) {
     let tableRow = document.createElement("tr");
     let delBtn = document.createElement("button");
-    let lable = document.createElement("lable");
+    let label = document.createElement("label");
     let bgColorInp = document.createElement("input");
     let colorInp = document.createElement("input");
     let checkBox = document.createElement("input");
@@ -67,7 +67,7 @@ function addFachToDOM(element) {
         removeFach(tableRow, element);
     });
 
-    lable.append(element.name);
+    label.append(element.name);
 
     bgColorInp.value = element.bgColor;
     bgColorInp.type = "color";
@@ -88,7 +88,7 @@ function addFachToDOM(element) {
     );
 
     appendWithTd(tableRow, delBtn);
-    appendWithTd(tableRow, lable);
+    appendWithTd(tableRow, label);
     appendWithTd(tableRow, bgColorInp);
     appendWithTd(tableRow, colorInp);
     appendWithTd(tableRow, checkBox);
