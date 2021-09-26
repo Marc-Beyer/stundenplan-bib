@@ -13,23 +13,37 @@ body {
   padding: 20px;
 }
 
-body p {
+body h1 {
+  margin-bottom: 20px;
+}
+
+body #help {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+body #help-pannel {
+  background-color: #333945;
+  padding: 20px;
+  border-radius: 2%;
   position: absolute;
-  top: 105px;
-  left: 700px;
+  top: 75px;
+  left: 750px;
 }
 
-body #add-panel {
-  margin-top: 50px;
+body #options {
+  background-color: #222631;
+  width: 600px;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 2%;
 }
 
-body #standard-color-panel {
-  position: absolute;
-  top: 105px;
-  left: 300px;
+body #options #standard-color-panel {
+  margin-bottom: 20px;
 }
 
-body #standard-color-panel input[type=color] {
+body #options #standard-color-panel input[type=color] {
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -38,71 +52,67 @@ body #standard-color-panel input[type=color] {
   -webkit-appearance: none;
 }
 
-body #standard-color-panel input[type=color]::-webkit-color-swatch-wrapper {
+body #options #standard-color-panel input[type=color]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-body #standard-color-panel input[type=color]::-webkit-color-swatch {
+body #options #standard-color-panel input[type=color]::-webkit-color-swatch {
   border: none;
   border-radius: 50%;
 }
 
-body #standard-color-panel table {
+body #options #standard-color-panel table {
   border-collapse: collapse;
   margin-top: 10px;
+  margin-left: 20px;
 }
 
-body #standard-color-panel td {
+body #options #standard-color-panel td {
   padding-right: 10px;
 }
 
-body h2 {
-  margin-top: 60px;
+body #interface-pannel {
+  background-color: #222631;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 600px;
+  border-radius: 2%;
+  padding: 20px;
 }
 
-body #upload-download-panel {
+body #interface-pannel #add-pannel {
   margin-top: 20px;
 }
 
-body #upload-download-panel #download-btn {
-  width: 100px;
-  height: 20px;
-}
-
-body #upload-download-panel #upload-btn {
-  width: 100px;
-  height: 20px;
-}
-
-body #faecher {
-  margin-top: 10px;
-  width: 300px;
+body #interface-pannel #faecher {
   border-collapse: separate;
   border-spacing: 0 10px;
+  margin-top: 10px;
+  margin-left: -14px;
 }
 
-body #faecher tr th {
+body #interface-pannel #faecher tr th {
   padding: 5px;
 }
 
-body #faecher tr td {
+body #interface-pannel #faecher tr td {
   min-width: 100px;
   text-align: center;
   vertical-align: middle;
 }
 
-body #faecher tr button {
+body #interface-pannel #faecher tr button {
   background: none;
   color: white;
   font-weight: bold;
   border: none;
 }
 
-body #faecher tr button:hover {
+body #interface-pannel #faecher tr button:hover {
   cursor: pointer;
 }
 
-body #faecher tr input[type=color] {
+body #interface-pannel #faecher tr input[type=color] {
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -111,16 +121,16 @@ body #faecher tr input[type=color] {
   -webkit-appearance: none;
 }
 
-body #faecher tr input[type=color]::-webkit-color-swatch-wrapper {
+body #interface-pannel #faecher tr input[type=color]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-body #faecher tr input[type=color]::-webkit-color-swatch {
+body #interface-pannel #faecher tr input[type=color]::-webkit-color-swatch {
   border: none;
   border-radius: 50%;
 }
 
-body #faecher tr:hover {
+body #interface-pannel #faecher tr:hover {
   background-color: #505050;
 }
 /*# sourceMappingURL=main.css.map */

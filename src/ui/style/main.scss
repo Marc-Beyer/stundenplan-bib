@@ -1,4 +1,6 @@
 $main-bg-color: #282C34;
+$help-bg-color: #333945;
+$interface-bg-color: #222631;
 $main-color: #ABB2BF;
 $standard-font-size: 15px;
 $standard-font: Arial, Helvetica, sans-serif;
@@ -17,98 +19,38 @@ body{
 
     padding: 20px;
 
-    p{
+    h1{
+        margin-bottom: 20px;
+    }
+
+    #help{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    #help-pannel{
+        background-color: $help-bg-color;
+
+        padding: 20px;
+        border-radius: 2%;
+
         position: absolute;
-        top: 105px;
-        left: 700px;
+        top: 75px;
+        left: 750px;
     }
 
-    #add-panel{
-        margin-top: 50px;
-    }
+    #options{
 
-    #standard-color-panel{
+        background-color: $interface-bg-color;
+        width: 600px;
+        padding: 20px;
+        margin-left: 20px;
+        border-radius: 2%;
 
-        position: absolute;
-        top: 105px;
-        left: 300px;
+        #standard-color-panel{
 
-        input[type=color]{
-            border-radius: 50%;
-            height: 20px;
-            width: 20px;
-            border: none;
-            outline: none;
-            -webkit-appearance: none;
-        }
-
-        input[type=color]::-webkit-color-swatch-wrapper {
-            padding: 0; 
-        }
-        input[type=color]::-webkit-color-swatch {
-            border: none;
-            border-radius: 50%;
-        }
-
-        table{
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        td{
-            padding-right: 10px;
-        }
-    }
-
-    h2{
-        margin-top: 60px;
-    }
-
-    #upload-download-panel{
-
-        margin-top: 20px;
-
-        #download-btn{
-            width: 100px;
-            height: 20px;
-        }
-
-        #upload-btn{
-            width: 100px;
-            height: 20px;
-        }
-    }
-
-    #faecher{
-        margin-top: 10px;
-        width: 300px;
-
-        border-collapse:separate;
-        border-spacing: 0 10px;
-
-        tr{
-
-            th{
-                padding: 5px;
-            }
-
-            td{
-                min-width: 100px;
-                text-align: center;
-                vertical-align: middle;
-            }
-
-            button{
-                background: none;
-                color: white;
-                font-weight: bold;
-                border: none;
-            }
-
-            button:hover{
-                cursor: pointer;
-            }
-
+            margin-bottom: 20px;
+    
             input[type=color]{
                 border-radius: 50%;
                 height: 20px;
@@ -117,7 +59,7 @@ body{
                 outline: none;
                 -webkit-appearance: none;
             }
-
+    
             input[type=color]::-webkit-color-swatch-wrapper {
                 padding: 0; 
             }
@@ -125,12 +67,86 @@ body{
                 border: none;
                 border-radius: 50%;
             }
+    
+            table{
+                border-collapse: collapse;
+                margin-top: 10px;
+                margin-left: 20px;
+            }
+    
+            td{
+                padding-right: 10px;
+            }
+        }
+    }
 
+    #interface-pannel{
+
+        background-color: $interface-bg-color;
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 600px;
+        border-radius: 2%;
+        padding: 20px;
+
+        #add-pannel{
+            margin-top: 20px;
         }
 
-        tr:hover{
-            background-color: #505050;
+        #faecher{
+    
+            border-collapse:separate;
+            border-spacing: 0 10px;
+            margin-top: 10px;
+            margin-left: -14px;
+    
+            tr{
+    
+                th{
+                    padding: 5px;
+                }
+    
+                td{
+                    min-width: 100px;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+    
+                button{
+                    background: none;
+                    color: white;
+                    font-weight: bold;
+                    border: none;
+                }
+    
+                button:hover{
+                    cursor: pointer;
+                }
+    
+                input[type=color]{
+                    border-radius: 50%;
+                    height: 20px;
+                    width: 20px;
+                    border: none;
+                    outline: none;
+                    -webkit-appearance: none;
+                }
+    
+                input[type=color]::-webkit-color-swatch-wrapper {
+                    padding: 0; 
+                }
+                input[type=color]::-webkit-color-swatch {
+                    border: none;
+                    border-radius: 50%;
+                }
+    
+            }
+    
+            tr:hover{
+                background-color: #505050;
+            }
         }
+
     }
     
 }

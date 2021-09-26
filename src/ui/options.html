@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Options</title>
+    <title>Optionen</title>
 
     <link rel="stylesheet" href="style/main.css">
     <script src="../browser-polyfill.min.js"></script>
@@ -12,63 +12,79 @@
     <script defer src="scripts/main.js"></script>
 </head>
 <body>
-    <h1>OPTIONS</h1>
+    <h1>OPTIONEN</h1>
 
-    <p>
-    Hinzufügen:<br>
-    Gib ein Fach ein und Füge es mit dem Knopf zur Liste hinzu.<br>
-    <br>
-    Entfernen:<br>
-    Entfernt das ausgewählte Fach aus der Liste.<br>
-    <br>
-    Fach:<br>
-    Anzeige vom Namen des Fachs.<br>
-    <br>
-    Hintergundfarbe:<br>
-    Wähle eine Farbe für den Hintergund aus.<br>
-    <br>
-    Schriftfarbe:<br>
-    Wähle eine Farbe für die Schrift aus.<br>
-    <br>
-    Angezeigen:<br>
-    Wähle aus ob das Fach in dem Plan angezeigt werden soll oder nicht.
-    </p>
-
-    <div id="add-panel">
-        <input type="text">
-        <button id="add-btn">Hinzufügen</button>
+    <div id="help-pannel">
+        <span id="help">HILFE</span><br>
+        <br>
+        Standartfarben:<br>
+        Hier kannst du einstellen welche Farben standartmäßig ausgwählt werden sollen.<br>
+        <br>
+        Herunterladen:<br>
+        Lade deine aktuellen Einstellungen herunter.<br>
+        <br>
+        Hochladen:<br>
+        Lade vorher herunterladene Einstellungen hoch.<br>
+        <br>
+        Hinzufügen:<br>
+        Gib ein Fach ein und füge es mit dem Knopf zur Liste hinzu.<br>
+        <br>
+        Entfernen:<br>
+        Entfernt das ausgewählte Fach aus der Liste.<br>
+        <br>
+        Fach:<br>
+        Anzeige vom Namen des Faches.<br>
+        <br>
+        Hintergundfarbe:<br>
+        Wähle eine Farbe für den Hintergund aus.<br>
+        <br>
+        Schriftfarbe:<br>
+        Wähle eine Farbe für die Schrift aus.<br>
+        <br>
+        Angezeigen:<br>
+        Wähle aus ob das Fach in dem Plan angezeigt werden soll oder nicht.
     </div>
 
-    <div id="standard-color-panel">
-        <h3>standardfarben</h3>
-        <table>
+    <div id="options">
+        <div id="standard-color-panel">
+            <h3>Standardfarben</h3>
+            <table>
+                <tr>
+                    <td><input type = "color" id="standard-bg-color"></td>
+                    <td>Hintergundfarbe</td>
+                </tr>
+                <tr>
+                    <td><input type = "color" id="standard-font-color"></td>
+                    <td>Schriftfarbe</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="upload-download-panel">
+            <button id="download-btn">Download</button>
+            <input type="file" id="upload-btn" value="Upload">
+        </div>
+    </div>
+
+
+    <div id="interface-pannel">
+        <h2>Fächer:</h2>
+
+        <div id="add-pannel">
+            <input type="text">
+            <button id="add-btn">Hinzufügen</button>
+        </div>
+
+        <table id="faecher">
             <tr>
-                <td><input type = "color" id="standard-bg-color"></td>
-                <td>Hintergundfarbe</td>
-            </tr>
-            <tr>
-                <td><input type = "color" id="standard-font-color"></td>
-                <td>Schriftfarbe</td>
+                <th>Entfernen</th>
+                <th>Fach</th>
+                <th>Hintergundfarbe</th>
+                <th>Schriftfarbe</th>
+                <th>Angezeigen</th>
             </tr>
         </table>
     </div>
-
-    <h2>Fächer:</h2>
-
-    <div id="upload-download-panel">
-        <button id="download-btn">Download</button>
-        <input type="file" id="upload-btn" value="Upload">
-    </div>
-
-    <table id="faecher">
-        <tr>
-            <th>Entfernen</th>
-            <th>Fach</th>
-            <th>Hintergundfarbe</th>
-            <th>Schriftfarbe</th>
-            <th>Angezeigen</th>
-        </tr>
-    </table>
 
 </body>
 </html>
