@@ -101,15 +101,35 @@ function setNewData(newData) {
     for (const fach of oldFaecher) {
         fach.remove();
     }
+   
+    let foundFaecher = false;
     for (const key in data) {
         if (Object.hasOwnProperty.call(data, key)) {
             if (key === "__values") {
                 standardBgColor.value = data[key].standardBgColor;
                 standardColor.value = data[key].standardColor;
-            } else {
-                if (data[key]) addFachToDOM(data[key]);
+            } else if (data[key]) {
+                foundFaecher = true;
+                addFachToDOM(data[key]);
             }
         }
+    }
+
+    if (!foundFaecher) {
+        let noElem = document.createElement("p");
+        noElem.className = "fach";
+        noElem.append("Noch keine Fächer gefunden!");
+        noElem.append(document.createElement("br"));
+
+        noElem.append("Gehe auf die Wochenplan Seite um deine Fächer zu laden:");
+        noElem.append(document.createElement("br"));
+
+        let link = document.createElement("a");
+        link.href = "https://intranet.bib.de/tiki-index.php?page=Wochenplan";
+        link.append("https://intranet.bib.de/tiki-index.php?page=Wochenplan");
+        noElem.append(link);
+
+        faecherTable.parentElement.insertAdjacentElement("afterend", noElem);
     }
 }
 
