@@ -71,6 +71,10 @@ body #options #standard-color-panel td {
   padding-right: 10px;
 }
 
+body #options #upload-download-panel button {
+  padding: 0 5px;
+}
+
 body #interface-panel {
   background-color: #222631;
   margin-left: 20px;
@@ -130,7 +134,7 @@ body #interface-panel #faecher tr input[type=color]::-webkit-color-swatch {
   border-radius: 50%;
 }
 
-body #interface-panel #faecher tr:hover {
+body #interface-panel #faecher tr:hover td {
   background-color: #505050;
 }
 

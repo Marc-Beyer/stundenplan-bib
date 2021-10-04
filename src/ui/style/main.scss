@@ -78,6 +78,12 @@ body{
                 padding-right: 10px;
             }
         }
+
+        #upload-download-panel{
+            button{
+                padding: 0 5px;
+            }
+        }
     }
 
     #interface-panel{
@@ -142,7 +148,7 @@ body{
     
             }
     
-            tr:hover{
+            tr:hover td{
                 background-color: #505050;
             }
         }
