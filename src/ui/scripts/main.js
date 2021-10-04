@@ -127,6 +127,7 @@ function setNewData(newData) {
         let link = document.createElement("a");
         link.href = "https://intranet.bib.de/tiki-index.php?page=Wochenplan";
         link.append("https://intranet.bib.de/tiki-index.php?page=Wochenplan");
+        link.target = "_blank";
         noElem.append(link);
 
         faecherTable.parentElement.insertAdjacentElement("afterend", noElem);

@@ -4,6 +4,7 @@ $interface-bg-color: #222631;
 $main-color: #ABB2BF;
 $standard-font-size: 15px;
 $standard-font: Arial, Helvetica, sans-serif;
+$link-color: #508cff;
 
 *{
     margin: 0%;
@@ -21,6 +22,10 @@ body{
 
     h1{
         margin-bottom: 20px;
+    }
+
+    a{
+        color: $link-color;
     }
 
     #help{
@@ -157,7 +162,7 @@ body{
     
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     body{
         #help-panel{
             left: 660px;

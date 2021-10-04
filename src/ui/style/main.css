@@ -17,6 +17,10 @@ body h1 {
   margin-bottom: 20px;
 }
 
+body a {
+  color: #508cff;
+}
+
 body #help {
   font-size: 35px;
   font-weight: bold;
@@ -138,7 +142,7 @@ body #interface-panel #faecher tr:hover td {
   background-color: #505050;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   body #help-panel {
     left: 660px;
   }
