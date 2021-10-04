@@ -14,7 +14,48 @@
 <body>
     <h1>OPTIONEN</h1>
 
-    <div id="help-pannel">
+    <div id="options">
+        <div id="standard-color-panel">
+            <h3>Standardfarben</h3>
+            <table>
+                <tr>
+                    <td><input type = "color" id="standard-bg-color"></td>
+                    <td>Hintergundfarbe</td>
+                </tr>
+                <tr>
+                    <td><input type = "color" id="standard-font-color"></td>
+                    <td>Schriftfarbe</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="upload-download-panel">
+            <button id="download-btn">Download</button>
+            <input type="file" id="upload-btn" value="Upload">
+        </div>
+    </div>
+
+
+    <div id="interface-panel">
+        <h2>Fächer:</h2>
+
+        <div id="add-panel">
+            <input id="add-input" type="text">
+            <button id="add-btn">Hinzufügen</button>
+        </div>
+
+        <table id="faecher">
+            <tr>
+                <th>Entfernen</th>
+                <th>Fach</th>
+                <th>Hintergundfarbe</th>
+                <th>Schriftfarbe</th>
+                <th>Angezeigen</th>
+            </tr>
+        </table>
+    </div>
+
+    <div id="help-panel">
         <span id="help">HILFE</span><br>
         <br>
         Standartfarben:<br>
@@ -44,47 +85,6 @@
         Angezeigen:<br>
         Wähle aus ob das Fach in dem Plan angezeigt werden soll oder nicht.
     </div>
-
-    <div id="options">
-        <div id="standard-color-panel">
-            <h3>Standardfarben</h3>
-            <table>
-                <tr>
-                    <td><input type = "color" id="standard-bg-color"></td>
-                    <td>Hintergundfarbe</td>
-                </tr>
-                <tr>
-                    <td><input type = "color" id="standard-font-color"></td>
-                    <td>Schriftfarbe</td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="upload-download-panel">
-            <button id="download-btn">Download</button>
-            <input type="file" id="upload-btn" value="Upload">
-        </div>
-    </div>
-
-
-    <div id="interface-pannel">
-        <h2>Fächer:</h2>
-
-        <div id="add-pannel">
-            <input type="text">
-            <button id="add-btn">Hinzufügen</button>
-        </div>
-
-        <table id="faecher">
-            <tr>
-                <th>Entfernen</th>
-                <th>Fach</th>
-                <th>Hintergundfarbe</th>
-                <th>Schriftfarbe</th>
-                <th>Angezeigen</th>
-            </tr>
-        </table>
-    </div>
-
+    
 </body>
 </html>

@@ -28,7 +28,7 @@ body{
         font-weight: bold;
     }
 
-    #help-pannel{
+    #help-panel{
         background-color: $help-bg-color;
 
         padding: 20px;
@@ -80,7 +80,7 @@ body{
         }
     }
 
-    #interface-pannel{
+    #interface-panel{
 
         background-color: $interface-bg-color;
         margin-left: 20px;
@@ -89,7 +89,7 @@ body{
         border-radius: 2%;
         padding: 20px;
 
-        #add-pannel{
+        #add-panel{
             margin-top: 20px;
         }
 
@@ -149,4 +149,27 @@ body{
 
     }
     
+}
+
+@media only screen and (max-width: 1000px) {
+    body{
+        #help-panel{
+            left: 660px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    body{
+        #interface-panel,
+        #options{
+            width: 100%;
+            margin: 0;
+        }
+        #help-panel{
+            position: inherit;
+
+            margin-top: 20px;
+        }
+    }
 }

@@ -1,6 +1,6 @@
 let faecherTable = document.querySelector("#faecher tbody");
 let addBtn = document.querySelector("#add-btn");
-let addInput = document.querySelector("#add-panel input");
+let addInput = document.querySelector("#add-input");
 let standardBgColor = document.querySelector("#standard-bg-color");
 let standardColor = document.querySelector("#standard-font-color");
 

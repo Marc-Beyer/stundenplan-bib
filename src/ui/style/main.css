@@ -22,7 +22,7 @@ body #help {
   font-weight: bold;
 }
 
-body #help-pannel {
+body #help-panel {
   background-color: #333945;
   padding: 20px;
   border-radius: 2%;
@@ -71,7 +71,7 @@ body #options #standard-color-panel td {
   padding-right: 10px;
 }
 
-body #interface-pannel {
+body #interface-panel {
   background-color: #222631;
   margin-left: 20px;
   margin-top: 10px;
@@ -80,39 +80,39 @@ body #interface-pannel {
   padding: 20px;
 }
 
-body #interface-pannel #add-pannel {
+body #interface-panel #add-panel {
   margin-top: 20px;
 }
 
-body #interface-pannel #faecher {
+body #interface-panel #faecher {
   border-collapse: separate;
   border-spacing: 0 10px;
   margin-top: 10px;
   margin-left: -14px;
 }
 
-body #interface-pannel #faecher tr th {
+body #interface-panel #faecher tr th {
   padding: 5px;
 }
 
-body #interface-pannel #faecher tr td {
+body #interface-panel #faecher tr td {
   min-width: 100px;
   text-align: center;
   vertical-align: middle;
 }
 
-body #interface-pannel #faecher tr button {
+body #interface-panel #faecher tr button {
   background: none;
   color: white;
   font-weight: bold;
   border: none;
 }
 
-body #interface-pannel #faecher tr button:hover {
+body #interface-panel #faecher tr button:hover {
   cursor: pointer;
 }
 
-body #interface-pannel #faecher tr input[type=color] {
+body #interface-panel #faecher tr input[type=color] {
   border-radius: 50%;
   height: 20px;
   width: 20px;
@@ -121,16 +121,34 @@ body #interface-pannel #faecher tr input[type=color] {
   -webkit-appearance: none;
 }
 
-body #interface-pannel #faecher tr input[type=color]::-webkit-color-swatch-wrapper {
+body #interface-panel #faecher tr input[type=color]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-body #interface-pannel #faecher tr input[type=color]::-webkit-color-swatch {
+body #interface-panel #faecher tr input[type=color]::-webkit-color-swatch {
   border: none;
   border-radius: 50%;
 }
 
-body #interface-pannel #faecher tr:hover {
+body #interface-panel #faecher tr:hover {
   background-color: #505050;
+}
+
+@media only screen and (max-width: 1000px) {
+  body #help-panel {
+    left: 660px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body #interface-panel,
+  body #options {
+    width: 100%;
+    margin: 0;
+  }
+  body #help-panel {
+    position: inherit;
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
