@@ -10,11 +10,14 @@ let data = initialData;
 
 // Get the storage
 async function getStorage() {
-    data = await browser.storage.local.get(["data"]).catch((err) => {
+    let storage = await browser.storage.local.get("data").catch((err) => {
         data = initialData;
     });
-    if (!data.__values) {
+    
+    if (!storage.data) {
         data = initialData;
+    }else{
+        data = storage.data;
     }
 }
 
@@ -31,6 +34,8 @@ async function updatedStorage() {
             console.log(err);
         });
     }
+
+    getStorage();
 }
 
 // If the storage has changed invoke getStorage() and update data
@@ -43,7 +48,7 @@ function handleMessage(msg) {
     switch (msg.type) {
         case "change-values-data":
             data.__values = msg.values;
-            browser.storage.local.set(data);
+            browser.storage.local.set( {data} );
             break;
 
         case "change-fach-data":
@@ -53,7 +58,7 @@ function handleMessage(msg) {
                 bgColor: msg.fach.bgColor,
                 isBlocked: msg.fach.isBlocked,
             };
-            browser.storage.local.set(data);
+            browser.storage.local.set( {data} );
             break;
 
         case "change-fach-data-in-range":
@@ -62,12 +67,12 @@ function handleMessage(msg) {
                     data[key] = msg.faecher[key];
                 }
             }
-            browser.storage.local.set(data);
+            browser.storage.local.set( {data} );
             break;
 
         case "delete-fach-data":
             data[msg.fach] = undefined;
-            browser.storage.local.set(data);
+            browser.storage.local.set( {data} );
             break;
 
         case "get-fach-data":
@@ -88,7 +93,7 @@ function handleMessage(msg) {
                 responseArr.push(data[fach]);
             }
 
-            browser.storage.local.set(data);
+            browser.storage.local.set( {data} );
             break;
     }
 }
