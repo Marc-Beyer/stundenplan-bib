@@ -23,6 +23,10 @@ addBtn.addEventListener("click", (e) => {
     addInput.value = "";
 });
 
+addInput.addEventListener("keyup", (e)=>{
+    if (e.key === "Enter") addBtn.click();
+});
+
 function changeFachEventHandler(element, colorInp, bgColorInp, checkBox) {
     sendMsg(
         createChangeDataMsg(
