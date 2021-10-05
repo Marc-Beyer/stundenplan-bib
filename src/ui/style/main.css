@@ -92,6 +92,10 @@ body #interface-panel #add-panel {
   margin-top: 20px;
 }
 
+body #interface-panel #add-panel button {
+  padding: 0 5px;
+}
+
 body #interface-panel #faecher {
   border-collapse: separate;
   border-spacing: 0 10px;
