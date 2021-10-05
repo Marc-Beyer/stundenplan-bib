@@ -124,6 +124,7 @@ body #interface-panel #faecher tr button {
   border: none;
 }
 
+body #interface-panel #faecher tr input:hover,
 body #interface-panel #faecher tr button:hover {
   cursor: pointer;
 }
