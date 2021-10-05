@@ -1,11 +1,16 @@
 let downloadBtn = document.getElementById("download-btn");
 let uploadBtn = document.getElementById("upload-btn");
+let uploadInput = document.getElementById("upload-input");
 
 downloadBtn.addEventListener("click", (e) => {
     if (data) {
 		console.log(data);
         download(JSON.stringify(data), "bib-stundenplan-theme.json", "json");
     }
+});
+
+uploadBtn.addEventListener("click", ()=>{
+    uploadInput.click();
 });
 
 function download(data, filename, type) {
@@ -43,7 +48,7 @@ function onLoad(event) {
 
 //Get the choosen file and read it as text
 function startRead(event) {
-    let file = uploadBtn.files[0];
+    let file = uploadInput.files[0];
     if (file) {
         let fileReader = new FileReader();
 
@@ -56,7 +61,7 @@ function startRead(event) {
 //Check if the file-APIs are supported.
 if (window.File && window.FileReader && window.FileList && window.Blob) {
     //The file-APIs are supported.
-    uploadBtn.addEventListener("change", startRead, false);
+    uploadInput.addEventListener("change", startRead, false);
 } else {
     //The file-APIs are not supported.
     alert("The file-APIs are not supported. You are not able to import.");

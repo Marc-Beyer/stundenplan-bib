@@ -88,6 +88,10 @@ body{
             button{
                 padding: 0 5px;
             }
+
+            input{
+                display: none;
+            }
         }
     }
 
@@ -102,7 +106,7 @@ body{
 
         #add-panel{
             margin-top: 20px;
-            
+
             button{
                 padding: 0 5px;
             }

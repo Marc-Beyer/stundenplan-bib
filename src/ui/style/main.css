@@ -79,6 +79,10 @@ body #options #upload-download-panel button {
   padding: 0 5px;
 }
 
+body #options #upload-download-panel input {
+  display: none;
+}
+
 body #interface-panel {
   background-color: #222631;
   margin-left: 20px;
