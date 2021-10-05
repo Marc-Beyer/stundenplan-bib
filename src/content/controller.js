@@ -155,8 +155,10 @@ if(stundenplanTable){
     function setNewData(newData) {
         data = newData;
 
+        console.log(data);
+
         for (const fach of faecher) {
-            let divs = document.querySelectorAll("." + fach);
+            let divs = document.getElementsByClassName(fach);
             for (const div of divs) {
                 div.style.background = getBgColor(fach);
                 div.style.color = getColor(fach);
