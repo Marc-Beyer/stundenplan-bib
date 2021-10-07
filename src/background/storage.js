@@ -80,7 +80,9 @@ function handleMessage(msg) {
                 updatedStorage();
                 return;
             }
-            let responseArr = [];
+            
+
+            let needToUpdateStorage = true;
             for (const fach of msg.faecher) {
                 if (data[fach] == undefined) {
                     data[fach] = {
@@ -89,11 +91,15 @@ function handleMessage(msg) {
                         bgColor: data.__values.standardBgColor,
                         isBlocked: false,
                     };
+                    needToUpdateStorage = false;
                 }
-                responseArr.push(data[fach]);
             }
 
-            browser.storage.local.set( {data} );
+            if(needToUpdateStorage){
+                updatedStorage();
+            }else{
+                browser.storage.local.set( {data} );
+            }
             break;
     }
 }
