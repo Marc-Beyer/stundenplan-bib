@@ -167,5 +167,12 @@ body #interface-panel #faecher tr:hover td {
     position: inherit;
     margin-top: 20px;
   }
+  body #interface-panel #faecher tr th {
+    width: 10%;
+  }
+  body #interface-panel #faecher tr th,
+  body #interface-panel #faecher tr td {
+    min-width: 10%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

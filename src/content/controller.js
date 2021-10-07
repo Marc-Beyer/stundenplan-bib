@@ -49,6 +49,8 @@ if(stundenplanTable){
     })();
 
     (function printTermine(){
+        document.querySelector("#stundenplan table").style.minWidth = "602px";
+
         let newStundenplan = document.createElement("table");
         newStundenplan.id = "new-stundenplan";
 
@@ -82,7 +84,8 @@ if(stundenplanTable){
 
         newStundenplan.style =  "display: flex;" +
                                 "min-height: 500px;" + 
-                                "height: 50vh";
+                                "height: 50vh;" +
+                                "min-width: 602px;";
 
         stundenplanTable.append(newStundenplan);
 
@@ -155,8 +158,6 @@ if(stundenplanTable){
     function setNewData(newData) {
         data = newData;
 
-        console.log(data);
-
         for (const fach of faecher) {
             let divs = document.getElementsByClassName(fach);
             for (const div of divs) {
@@ -198,6 +199,6 @@ if(stundenplanTable){
             type: "get-fach-data",
         };
     }
-
+    
     sendMessage(createGetDataMsg(faecher));
 }
